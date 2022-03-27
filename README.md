@@ -1,7 +1,5 @@
 # SMPLVERSE
 
----
-
 ### workflow:
 
 after entering the mint page the user can connect their wallet and mint an nft
