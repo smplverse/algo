@@ -8,3 +8,4 @@ coverage
 .env
 node_modules
 artifacts
+.DS_Store
