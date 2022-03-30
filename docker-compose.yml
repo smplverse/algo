@@ -4,10 +4,10 @@ services:
     build: .
     image: piotrostr/smplverse
     platform: linux/amd64
-    command: python main.py
     working_dir: /code
     volumes:
       - ./:/code
+    command: nvidia-smi && pytest
     deploy:
       resources:
         reservations:

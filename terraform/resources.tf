@@ -2,9 +2,13 @@ resource "aws_instance" "smplverse_instance" {
   ami           = var.DL_AMI
   instance_type = "g4dn.xlarge"
   count         = 1
-  key_name      = "smplverse"
-
-  vpc_security_group_ids = [aws_security_group.smplverse_sg.id]
+  key_name      = "smplverse_key"
+  depends_on = [
+    aws_security_group.smplverse_security_group
+  ]
+  vpc_security_group_ids = [
+    aws_security_group.smplverse_security_group.id
+  ]
 
   connection {
     type        = "ssh"
@@ -14,7 +18,7 @@ resource "aws_instance" "smplverse_instance" {
   }
 }
 
-resource "aws_security_group" "smplverse_sg" {
+resource "aws_security_group" "smplverse_security_group" {
   egress {
     cidr_blocks      = ["0.0.0.0/0"]
     from_port        = 0
@@ -31,6 +35,8 @@ resource "aws_security_group" "smplverse_sg" {
 }
 
 resource "aws_key_pair" "smplverse_key" {
-  key_name = "smplverse"
+  key_name = "smplverse_key"
   public_key = file("~/.ssh/smplverse.pub")
 }
+
+# resource "aws_volume_attachment" "smplverse_volume_attachment" { }
