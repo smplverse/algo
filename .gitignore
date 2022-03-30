@@ -17,3 +17,4 @@ data
 *.tfvars.json
 .terraformrc
 __pycache__
+notes

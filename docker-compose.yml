@@ -7,7 +7,11 @@ services:
     working_dir: /code
     volumes:
       - ./:/code
-    command: nvidia-smi && pytest
+    ipc: host
+    ulimits:
+      memlock: -1
+      stack: 67108864
+    command: pytest
     deploy:
       resources:
         reservations:
