@@ -8,17 +8,17 @@ packer {
 }
 
 source "amazon-ebs" "smplverse_ami" {
-  ami_name             = "smplverse_ami"
-  region               = "us-east-2"
-  source_ami           = "ami-0fd4336c5e2ccb32d"
-  instance_type        = "g4dn.xlarge"
-  ssh_username         = "ubuntu"
+  ami_name      = "smplverse_ami"
+  region        = "us-east-2"
+  source_ami    = "ami-0fd4336c5e2ccb32d"
+  instance_type = "g4dn.xlarge"
+  ssh_username  = "ubuntu"
 }
 
 variable "GITHUB_ACCESS_TOKEN" {
-  type = string
+  type      = string
   sensitive = true
-  default = "${env("GITHUB_ACCESS_TOKEN")}"
+  default   = "${env("GITHUB_ACCESS_TOKEN")}"
 }
 
 build {
