@@ -4,4 +4,4 @@ opencv-python
 pycuda
 numpy
 onnx
-nvidia-tensorrt
+nvidia-pyindex

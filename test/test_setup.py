@@ -11,8 +11,10 @@ def test_tensorrt_imports():
 
 
 def test_pycuda_works():
+    import pycuda.autoinit
     import pycuda.gpuarray as gpuarray
     import numpy.linalg as la
+    import numpy as np
     a = np.arange(200000, dtype=np.float32)
     b = a + 17
 
