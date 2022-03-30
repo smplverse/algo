@@ -9,4 +9,10 @@ coverage
 node_modules
 artifacts
 .DS_Store
-dataset
+data
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+.terraformrc
