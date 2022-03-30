@@ -15,6 +15,7 @@ resource "aws_instance" "smplverse_instance" {
     user        = "ubuntu"
     private_key = file("~/.ssh/smplverse")
     timeout     = "10s"
+    password    = var.SSH_PASSWORD
   }
 }
 

@@ -8,6 +8,11 @@ variable "AWS_SECRET_KEY" {
   sensitive = true
 }
 
+variable "SSH_PASSWORD" {
+  type = string
+  sensitive = true
+}
+
 variable "DL_AMI" {
   type = string
   sensitive = false
