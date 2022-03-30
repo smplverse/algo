@@ -9,3 +9,4 @@ coverage
 node_modules
 artifacts
 .DS_Store
+dataset
