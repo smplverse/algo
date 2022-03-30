@@ -1,14 +1,8 @@
 version: "3.9"
 services:
-  cpu:
-    image: pytorch/pytorch:latest
-    platform: linux/amd64
-    command: python main.py
-    working_dir: /code
-    volumes:
-      - ./:/code
   gpu:
-    image: pytorch/pytorch:latest
+    build: .
+    image: piotrostr/smplverse
     platform: linux/amd64
     command: python main.py
     working_dir: /code
