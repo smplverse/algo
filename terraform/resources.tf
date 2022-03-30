@@ -15,7 +15,20 @@ resource "aws_instance" "smplverse_instance" {
     user        = "ubuntu"
     private_key = file("~/.ssh/smplverse")
     timeout     = "10s"
+    host        = self.public_ip
     password    = var.SSH_PASSWORD
+  }
+
+  provisioner "remote-exec" {
+    inline = [
+      <<EOT
+      sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+      EOT,
+      "sudo chmod +x /usr/local/bin/docker-compose",
+      <<EOT
+      sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+      EOT
+    ]
   }
 }
 
@@ -39,5 +52,3 @@ resource "aws_key_pair" "smplverse_key" {
   key_name = "smplverse_key"
   public_key = file("~/.ssh/smplverse.pub")
 }
-
-# resource "aws_volume_attachment" "smplverse_volume_attachment" { }
