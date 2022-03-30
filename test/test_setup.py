@@ -1,14 +1,13 @@
-import pytest
-
-
 def test_torch_works_with_cuda():
     import torch
     assert torch.cuda.is_available() == True
+    print('PyTorch:', torch.__version__)
 
 
 def test_tensorrt_imports():
     import tensorrt as trt
-    assert tensorrt is not None
+    assert trt.Builder(trt.Logger())
+    print('TensorRT:', trt.__version__)
 
 
 def test_pycuda_works():

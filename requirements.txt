@@ -1,2 +1,6 @@
 insightface
 pytest
+opencv-python
+pycuda
+numpy
+onnx
