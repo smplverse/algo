@@ -29,12 +29,9 @@ resource "aws_instance" "smplverse_instance" {
       <<EOT
       sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
       EOT,
-    ]
-  }
-
-  # install k8s
-  provisioner "remote-exec" {
-    inline = [
+      <<EOT
+      sudo chmod +x /usr/local/bin/docker-compose
+      EOT,
       <<EOT
       sudo apt-get update \
       && sudo apt-get install -y \
