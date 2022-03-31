@@ -21,6 +21,12 @@ variable "GITHUB_ACCESS_TOKEN" {
   default   = "${env("GITHUB_ACCESS_TOKEN")}"
 }
 
+variable "SMPLVERSE_HASH" {
+  type = string
+  sensitive = true
+  default = "${env("SMPLVERSE_HASH")}"
+}
+
 build {
   sources = ["amazon-ebs.smplverse_ami"]
 
@@ -33,7 +39,14 @@ build {
   provisioner "shell" {
     scripts = [
       "./setup-compose.sh",
-      "./get-mock-dataset.sh"
+      "./get-mock-dataset.sh",
+      "./setup-ipfs.sh"
+    ]
+  }
+
+  provisioner "shell" {
+    inline = [
+      "cd smplverse && ipfs get -o smpls ${var.SMPLVERSE_HASH}",
     ]
   }
 }
