@@ -26,14 +26,14 @@ build {
 
   provisioner "shell" {
     inline = [
-      "git clone https://piotrostr:${var.GITHUB_ACCESS_TOKEN}@github.com/piotrostr/smplverse",
+      "git clone https://piotrostr:${var.GITHUB_ACCESS_TOKEN}@github.com/piotrostr/smplverse"
     ]
   }
 
   provisioner "shell" {
     scripts = [
       "./setup-compose.sh",
-      "./get-mock-dataset.sh"
+      "./get-data.sh"
     ]
   }
 }
