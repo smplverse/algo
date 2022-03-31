@@ -6,5 +6,6 @@ tar -xvzf go-ipfs_v0.12.0_linux-amd64.tar.gz
 
 cd go-ipfs
 sudo bash install.sh
+cd ..
 
-rm go-ipfs_v0.12.0_linux-amd64.tar.gz
+rm -rf go-ipfs_v0.12.0_linux-amd64.tar.gz go-ipfs
