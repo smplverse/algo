@@ -1,5 +1,5 @@
 resource "aws_instance" "smplverse_instance" {
-  ami           = var.DL_AMI
+  ami           = var.PACKER_AMI
   instance_type = "g4dn.xlarge"
   count         = 1
   key_name      = "smplverse_key"

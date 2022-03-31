@@ -18,8 +18,8 @@ variable "SSH_PASSWORD" {
   sensitive = true
 }
 
-variable "DL_AMI" {
+variable "PACKER_AMI" {
   type      = string
   sensitive = false
-  default   = "ami-0fd4336c5e2ccb32d"
+  default   = "ami-0e7593b27916cb057"
 }
