@@ -31,6 +31,9 @@ build {
   }
 
   provisioner "shell" {
-    script = "./setup-compose.sh"
+    scripts = [
+      "./setup-compose.sh",
+      "./get-mock-dataset.sh"
+    ]
   }
 }

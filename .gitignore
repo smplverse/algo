@@ -18,3 +18,4 @@ data
 .terraformrc
 __pycache__
 notes
+.pytest_cache
