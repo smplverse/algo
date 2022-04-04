@@ -1,9 +1,9 @@
+import cv2
 import os
 import numpy as np
-import cv2
 
-from src.detect import crop_face
-from typing import List, Union
+from deepface import DeepFace
+from typing import List, Tuple
 
 # workflow
 # detect face in webcam capture
@@ -16,26 +16,40 @@ from typing import List, Union
 # later on this shall be all moved to a class interface to be used along with a server
 
 
-def load_smpls(path: str) -> List[np.ndarray]:
+def is_valid(path: str):
+    if "png" not in path:
+        return False
+    if "copy" not in path and "seg" not in path:
+        return True
+    return False
+
+
+def load_smpls(base_path: str) -> List[np.ndarray]:
     # in the future will use a dataloader here, 7k pieces is a lot
-    paths = os.listdir(path)
+    # there is also an option to use a database
+    paths = os.listdir(base_path)
     if len(paths) == 0:
         raise Exception("no smpls found")
-    paths = [p for p in paths if "png" in p][:10]
-    smpls = [cv2.imread("data/smpls/" + p) for p in paths]
+    paths = [path for path in paths if is_valid(path)][:100]
+    paths = [base_path + "/" + path for path in paths]
+    smpls = [cv2.imread(path) for path in paths]
     return smpls
 
 
-def match(img1: np.ndarray, img2: np.ndarray):
-    # TODO
-    return 0
-
-
-def match_smpl_to_face(frame: np.ndarray) -> Union[np.ndarray, None]:
-    smpls = load_smpls()
-    face = crop_face(frame)
+def match_smpl_to_face(face: np.ndarray) -> Tuple[np.ndarray, dict]:
+    # also loop could break if there is a good match, good enough to verify
+    smpls = load_smpls("data/smpls")
     scores = []
+    results = []
     for smpl in smpls:
-        score = match(face, smpl)
-        scores.push(score)
-    return smpls[np.argmax(scores)]
+        try:
+            result = DeepFace.verify(img1_path=face, img2_path=smpl)
+            print(result)
+            results.append(result)
+            scores.append(result['distance'])
+        except:
+            scores.append(1)
+            results.append(None)
+    print(f'successful matches: {np.count_nonzero(results)}/{len(results)}')
+    best_score_idx = np.argmin(scores)  # best score is lowest distance
+    return smpls[best_score_idx], results[best_score_idx]
