@@ -16,9 +16,9 @@ from typing import List, Union
 # later on this shall be all moved to a class interface to be used along with a server
 
 
-def load_smpls() -> List[np.ndarray]:
+def load_smpls(path: str) -> List[np.ndarray]:
     # in the future will use a dataloader here, 7k pieces is a lot
-    paths = os.listdir("data/smpls/")
+    paths = os.listdir(path)
     if len(paths) == 0:
         raise Exception("no smpls found")
     paths = [p for p in paths if "png" in p][:10]
