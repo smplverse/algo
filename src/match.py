@@ -15,6 +15,11 @@ from typing import List, Tuple
 
 # later on this shall be all moved to a class interface to be used along with a server
 
+# 100 mock input images
+# 1000 smpls
+# tensorboard
+# store hash of the image uploaded in the address mapping for given indices
+
 
 def is_valid(path: str):
     if "png" not in path:
