@@ -23,3 +23,9 @@ def test_pycuda_works():
 
     diff = (a_g * b_g).get() - a * b
     assert la.norm(diff) == 0
+
+
+def test_opencv_works():
+    import cv2
+    img = cv2.imread("data/input/AJ_Cook/AJ_Cook_0001.jpg")
+    assert len(img.shape) == 3
