@@ -3,7 +3,8 @@ import numpy as np
 
 from insightface.app import FaceAnalysis
 
-app = FaceAnalysis(providers=['CPUExecutionProvider'])
+app = FaceAnalysis(providers=['CPUExecutionProvider'],
+                   root='./models/insightface')
 app.prepare(ctx_id=0, det_size=(640, 640))
 
 

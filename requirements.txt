@@ -5,6 +5,7 @@ numpy
 onnx
 nvidia-pyindex
 onnxruntime
+bcolz
 
 # dev deps
 pytest

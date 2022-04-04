@@ -3,5 +3,5 @@ RUN apt-get update && apt-get install -y libgl1-mesa-glx
 RUN conda install -c conda-forge opencv
 
 FROM base as main
-COPY . .
+COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
