@@ -6,7 +6,6 @@ from src.match import match_smpl_to_face
 
 
 def show_result():
-    # TODO implement an evaluation func
     pass
 
 
