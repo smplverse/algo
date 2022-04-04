@@ -8,4 +8,3 @@ nvidia-pyindex
 # dev deps
 pytest
 pytest-cov
-jupyterlab
