@@ -1,5 +1,25 @@
 version: "3"
 services:
+  jupyter:
+    build: .
+    image: piotrostr/smplverse
+    platform: linux/amd64
+    working_dir: /code
+    volumes:
+      - ./:/code
+    ipc: host
+    ulimits:
+      memlock: -1
+      stack: 67108864
+    command: jupyter lab
+    ports:
+      - 8888:8888
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
   gpu:
     build: .
     image: piotrostr/smplverse
