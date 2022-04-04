@@ -4,6 +4,7 @@ pycuda
 numpy
 onnx
 nvidia-pyindex
+onnxruntime
 
 # dev deps
 pytest
