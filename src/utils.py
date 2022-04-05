@@ -4,13 +4,17 @@ import os
 import json
 import hashlib
 
-from typing import List
+from typing import Any, List
 
 
-def write_file(obj: dict, fname=None) -> str:
+def write_file(obj: Any, fname: str = None, sort: bool = False) -> str:
     if fname is None:
         fname = hashlib.sha256().hexdigest()[:8]
-    path = f"log/{fname}.json"
+    path = f"results/{fname}.json"
+    if sort == True and type(obj) is list:
+        # TODO
+        # obj = sorted(obj, key=lambda x: x.values(['distance'])
+        pass
     with open(path, "w+") as f:
         f.write(json.dumps(obj, indent=2))
     print(f"wrote {path}")

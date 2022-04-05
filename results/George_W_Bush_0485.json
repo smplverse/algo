@@ -1,0 +1,442 @@
+[
+  {
+    "data/smpls/092760.png": {
+      "verified": false,
+      "distance": 0.6272725878640856,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/002120.png": {
+      "verified": false,
+      "distance": 0.4985400909881085,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/058174.png": {
+      "verified": false,
+      "distance": 0.6345948336402474,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/010982.png": {
+      "verified": false,
+      "distance": 0.5110028458941132,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/007565.png": {
+      "verified": false,
+      "distance": 0.5549414483208049,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/040639.png": {
+      "verified": false,
+      "distance": 0.49252654910802096,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/059151.png": {
+      "verified": false,
+      "distance": 0.4804774059363316,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/096268.png": {
+      "verified": false,
+      "distance": 0.5370660051894804,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/002038.png": {
+      "verified": false,
+      "distance": 0.4322831062677187,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/094126.png": {
+      "verified": false,
+      "distance": 0.6604105435928977,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/026416.png": {
+      "verified": false,
+      "distance": 0.5299127415156327,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006249.png": {
+      "verified": false,
+      "distance": 0.48120903120783864,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005389.png": {
+      "verified": false,
+      "distance": 0.4816966983472639,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/075110.png": {
+      "verified": false,
+      "distance": 0.48168792833836804,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/014696.png": {
+      "verified": false,
+      "distance": 0.5506081269327137,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/022515.png": {
+      "verified": false,
+      "distance": 0.5819740791703938,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/007670.png": {
+      "verified": false,
+      "distance": 0.48407126198342953,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/012174.png": {
+      "verified": false,
+      "distance": 0.5330916153093674,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/036379.png": {
+      "verified": false,
+      "distance": 0.6783363126255173,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/051958.png": {
+      "verified": false,
+      "distance": 0.42145208825814284,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/011150.png": {
+      "verified": true,
+      "distance": 0.33661471829040135,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/016621.png": {
+      "verified": false,
+      "distance": 0.7618814938820583,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/007075.png": {
+      "verified": false,
+      "distance": 0.47517587855733856,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/069083.png": {
+      "verified": false,
+      "distance": 0.6481093753450966,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006231.png": {
+      "verified": true,
+      "distance": 0.30864449754960743,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/096832.png": {
+      "verified": false,
+      "distance": 0.6177332667089636,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/016560.png": {
+      "verified": false,
+      "distance": 0.5480544422133116,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/095353.png": {
+      "verified": false,
+      "distance": 0.6241256871719956,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005258.png": {
+      "verified": true,
+      "distance": 0.38133779345974006,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/043260.png": {
+      "verified": false,
+      "distance": 0.5645643368107258,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/008684.png": {
+      "verified": false,
+      "distance": 0.4949181314571449,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/029991.png": {
+      "verified": false,
+      "distance": 0.6102135798631014,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/001400.png": {
+      "verified": false,
+      "distance": 0.8435965948740032,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/025527.png": {
+      "verified": false,
+      "distance": 0.55888709789755,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/017972.png": {
+      "verified": false,
+      "distance": 0.6078848246692548,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/030503.png": {
+      "verified": false,
+      "distance": 0.4105871525010122,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/002433.png": {
+      "verified": false,
+      "distance": 0.418984305898347,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006125.png": {
+      "verified": false,
+      "distance": 0.7690448705741535,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/091829.png": {
+      "verified": false,
+      "distance": 0.4073824503917869,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/004773.png": {
+      "verified": false,
+      "distance": 0.5436764425315488,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/043717.png": {
+      "verified": false,
+      "distance": 0.6458742315353836,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/073366.png": {
+      "verified": false,
+      "distance": 0.5753276767686559,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/058515.png": {
+      "verified": false,
+      "distance": 0.6766834191673319,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006142.png": {
+      "verified": false,
+      "distance": 0.6237922199018036,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  }
+]

@@ -16,16 +16,24 @@ def get_face() -> np.ndarray:
     return face, face_name
 
 
-def show_comparison_cv(face: np.ndarray, smpl: np.ndarray, final=False):
+def show_comparison_cv(face: np.ndarray,
+                       smpl: np.ndarray,
+                       final: bool = False,
+                       write: bool = False,
+                       fname: str = None):
     if face.shape != smpl.shape:
         h, w, _ = smpl.shape
         face = cv2.resize(face, dsize=(w, h))
-    cv2.imshow("img", np.concatenate((face, smpl)))
+    merged = np.concatenate((face, smpl), axis=1)
+    cv2.imshow("img", merged)
     waitKeyTime = 1
     if final:
         waitKeyTime = 0
     if cv2.waitKey(waitKeyTime) & 0xFF == ord('q'):
         cv2.destroyAllWindows()
+    if write and fname:
+        cv2.imwrite(f"results/{fname}.png", merged)
+        print("saved img %s" % fname)
 
 
 def show_comparison_mpl(face: np.ndarray, smpl: np.ndarray):
@@ -37,24 +45,27 @@ def show_comparison_mpl(face: np.ndarray, smpl: np.ndarray):
 
 def main():
     face, face_name = get_face()
+    face_name = face_name.replace(".jpg", "")
     paths, smpls = load_smpls("data/smpls")
     scores = []
-    res = {}
+    res = []
     # build ensemble before feeding the images
     for path, smpl in zip(paths, smpls):
         show_comparison_cv(face, smpl)
         try:
             result = DeepFace.verify(img1_path=face, img2_path=smpl)
-            res[path] = result
+            res.append({path: result})
             scores.append(result['distance'])
         except:
             scores.append(1)
     best_score_idx = np.argmin(scores)
     print(best_score_idx, len(smpls))
-    print("best match: %.2f" % scores[best_score_idx])
+    best_match = scores[best_score_idx]
+    print("best match: %.2f" % best_match)
     smpl = smpls[best_score_idx]
-    write_file(res, fname=face_name.replace(".jpg", ""))
-    show_comparison_cv(face, smpl, final=True)
+    write_file(res, fname=face_name, sort=True)
+    if best_match < 0.4:
+        show_comparison_cv(face, smpl, final=True, write=True, fname=face_name)
 
 
 if __name__ == "__main__":
