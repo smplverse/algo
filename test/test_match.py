@@ -17,7 +17,7 @@ def test_load_smpls():
     smpls = load_smpls("data/smpls")
     assert len(smpls) >= 10
     assert isinstance(smpls[3], np.ndarray)
-    assert smpls[3]
+    assert np.any(smpls[3])
     assert len(smpls[3].shape) == 3
 
 

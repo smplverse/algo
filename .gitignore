@@ -21,3 +21,4 @@ notes
 .pytest_cache
 models
 htmlcov
+log
