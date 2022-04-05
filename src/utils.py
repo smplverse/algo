@@ -7,8 +7,9 @@ import hashlib
 from typing import List
 
 
-def write_file(obj: dict) -> str:
-    fname = hashlib.sha256().hexdigest()[:8]
+def write_file(obj: dict, fname=None) -> str:
+    if fname is None:
+        fname = hashlib.sha256().hexdigest()[:8]
     path = f"log/{fname}.json"
     with open(path, "w+") as f:
         f.write(json.dumps(obj, indent=2))
