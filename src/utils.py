@@ -7,12 +7,13 @@ import hashlib
 from typing import List
 
 
-def write_file(obj: dict):
+def write_file(obj: dict) -> str:
     fname = hashlib.sha256().hexdigest()[:8]
     path = f"log/{fname}.json"
     with open(path, "w+") as f:
         f.write(json.dumps(obj, indent=2))
     print(f"wrote {path}")
+    return fname
 
 
 def is_valid(path: str):

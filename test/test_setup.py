@@ -27,5 +27,5 @@ def test_pycuda_works():
 
 def test_opencv_works():
     import cv2
-    img = cv2.imread("data/input/AJ_Cook/AJ_Cook_0001.jpg")
+    img = cv2.imread("data/input/AJ_Cook_0001.jpg")
     assert len(img.shape) == 3

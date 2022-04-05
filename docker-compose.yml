@@ -11,7 +11,7 @@ services:
     ulimits:
       memlock: -1
       stack: 67108864
-    command: pytest --cov
+    command: pytest --cov-report=html --cov
     deploy:
       resources:
         reservations:
