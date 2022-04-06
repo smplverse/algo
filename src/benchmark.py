@@ -1,4 +1,6 @@
+from deepface.commons.functions import detect_face
+
+
 def benchmark():
-    # TODO
-    # it is crucial to get as many successful detections as possible
-    pass
+    # before implementing our own, lets try the deepface builtins
+    detector_backends = ["", ""]
