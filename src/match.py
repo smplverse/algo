@@ -5,6 +5,7 @@ import time
 from deepface import DeepFace
 from src.utils import write_file, load_smpls, get_face
 from src.visualization import show_comparison_cv
+from typing import Any
 
 
 def match(
@@ -12,7 +13,7 @@ def match(
     write=True,
     face: np.ndarray = None,
     face_name: str = None,
-    model_name="VGG-Face",
+    model: Any = None,
     detector_backend="opencv",
 ):
     tic = time.time()
@@ -22,8 +23,9 @@ def match(
     scores = []
     res = []
     inference_times = []
-    model = DeepFace.build_model(model_name)
-    print("built", model_name)
+    if not model:
+        model = DeepFace.build_model("VGG-Face")
+        print("built default (VGG-Face)")
     for path, smpl in zip(paths, smpls):
         try:
             inference_tic = time.time()
