@@ -8,15 +8,16 @@ from src.utils import write_file, load_smpls, get_face
 from src.visualization import show_comparison_cv
 
 
-def main(headless: bool, write=True):
+def main(headless: bool,
+         write=True,
+         model_name="VGG_Face",
+         detector_backend="opencv"):
     tic = time.time()
     face, face_name = get_face()
     face_name = face_name.replace(".jpg", "")
     paths, smpls = load_smpls("data/smpls")
     scores = []
     res = []
-    model_name = "VGG_Face"
-    detector_backend = "opencv"
     for path, smpl in zip(paths, smpls):
         try:
             result = DeepFace.verify(

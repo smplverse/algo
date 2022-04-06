@@ -1,9 +1,9 @@
+deepface
 opencv-python
 pycuda
 numpy
 onnx
 nvidia-pyindex
-deepface
 
 # dev deps
 pytest
