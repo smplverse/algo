@@ -7,6 +7,8 @@ from src.data import get_validation_zip
 from typing import Tuple
 from deepface.DeepFace import build_model
 
+from src.benchmark import benchmark
+
 
 def get_backend_and_model() -> Tuple[str, str]:
     url = os.environ.get("CHECKLIST_API_URL")
@@ -17,7 +19,7 @@ def get_backend_and_model() -> Tuple[str, str]:
     return res['backend'], res['model']
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--headless", action="store_true")
     args = parser.parse_args()
@@ -39,3 +41,7 @@ if __name__ == "__main__":
             model=model,
             model_name=model_name,
         )
+
+
+if __name__ == "__main__":
+    benchmark()

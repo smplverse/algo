@@ -9,12 +9,17 @@ from src.data import get_smpls
 from src.visualization import show_comparison_cv
 
 
-def log_stats(scores: List[float]) -> int:
+def log_stats(
+    scores: List[float],
+    inference_times: List[float] = [],
+) -> int:
     best_score_idx = np.argmin(scores)
     best_match = scores[best_score_idx]
     landed = np.count_nonzero(np.array(scores) != 1)
-    print("detection rate: %d/%d" % (landed, len(scores)))
+    print("\ndetection rate: %d/%d" % (landed, len(scores)))
     print("best match: %.2f" % best_match)
+    if len(inference_times):
+        print("average time per image: %.2fs" % np.mean(inference_times))
     return best_score_idx
 
 
