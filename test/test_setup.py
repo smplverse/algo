@@ -1,13 +1,19 @@
-def test_torch_works_with_cuda():
-    import torch
-    assert torch.cuda.is_available() == True
+import pytest
 
 
+def test_tensorflow_works_with_cuda():
+    import tensorflow
+    assert tensorflow.test.is_gpu_available()
+    assert tensorflow.test.is_built_with_gpu_support()
+
+
+@pytest.mark.skip()
 def test_tensorrt_imports():
     import tensorrt as trt
     assert trt.Builder(trt.Logger())
 
 
+@pytest.mark.skip()
 def test_pycuda_works():
     import pycuda.autoinit
     import pycuda.gpuarray as gpuarray

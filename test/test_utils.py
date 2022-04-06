@@ -38,5 +38,5 @@ def test_write_file():
     from src.utils import write_file
     obj = {"key": "value"}
     fname = write_file(obj)
-    assert fname + ".json" in os.listdir('log')
-    os.remove("log/" + fname + ".json")
+    assert fname + ".json" in os.listdir('results')
+    os.remove("results/" + fname + ".json")
