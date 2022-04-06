@@ -37,6 +37,6 @@ def test_is_valid():
 def test_write_file():
     from src.utils import write_file
     obj = {"key": "value"}
-    fname = write_file(obj)
-    assert fname + ".json" in os.listdir('results')
-    os.remove("results/" + fname + ".json")
+    path = write_file(obj)
+    assert path.replace("results/", "") in os.listdir('results')
+    os.remove(path)

@@ -18,7 +18,7 @@ def write_file(obj: Any, path: str = None, sort: bool = False) -> str:
     with open(path, "w+") as f:
         f.write(json.dumps(obj, indent=2))
     print("wrote json: %s" % path)
-    return fname
+    return path
 
 
 def is_valid(path: str):

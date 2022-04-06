@@ -15,19 +15,20 @@ def match(
     face_name: str = None,
     model: Any = None,
     model_name: Any = None,
-    detector_backend="opencv",
+    detector_backend: str = None,
 ):
-    tic = time.time()
     if face is None or face_name is None:
         face, face_name = get_face()
+    if not model and not model_name:
+        detector_backend = "opencv"
+        model_name = "VGG-Face"
+        model = DeepFace.build_model(model_name)
+        print("built default (VGG-Face)")
     paths, smpls = load_smpls("data/smpls")
     scores = []
     res = []
     inference_times = []
-    if not model and not model_name:
-        model_name = "VGG-Face"
-        model = DeepFace.build_model(model_name)
-        print("built default (VGG-Face)")
+    tic = time.time()
     for path, smpl in zip(paths, smpls):
         try:
             inference_tic = time.time()
@@ -38,7 +39,7 @@ def match(
                 detector_backend=detector_backend,
             )
             inference_toc = time.time()
-            inference_times.append(float(inference_tic - inference_toc))
+            inference_times.append(float(inference_toc - inference_tic))
             res.append({path: result})
             show_comparison_cv(face, smpl, headless)
             distance = result['distance']
@@ -60,8 +61,8 @@ def match(
     if write:
         merged = merge(face, smpl)
         base_path = f"results/{detector_backend}/{model_name}"
-        write_file(
-            res, path=f"{base_path}/json/{face_name.replace('jpg', '')}.json")
+        fpath = f"{base_path}/json/{face_name.replace('.jpg', '')}.json"
+        write_file(res, path=fpath)
         cv2.imwrite(f"{base_path}/image/{face_name}.png", merged)
         print("saved img %s" % face_name)
     if best_match < 0.4:
