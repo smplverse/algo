@@ -12,12 +12,15 @@ def get_first_unused(checklist: dict):
         for model, used in checklist[backend].items():
             if not used:
                 return backend, model
+    return None, None
 
 
 def get_and_update() -> Tuple[str, str]:
     with open("./checklist.json", "r+") as f:
         checklist = json.loads(f.read())
     backend, model = get_first_unused(checklist)
+    if not backend and not model:
+        return None, None
     checklist[backend][model] = True
     with open("./checklist.json", "w+") as f:
         f.write(json.dumps(checklist, indent=2))
