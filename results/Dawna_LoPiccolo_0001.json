@@ -1,0 +1,4172 @@
+[
+  {
+    "data/smpls/092760.png": {
+      "verified": false,
+      "distance": 0.6237297627903813,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/002120.png": {
+      "verified": false,
+      "distance": 0.5714690894713823,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/058174.png": {
+      "verified": false,
+      "distance": 0.48459603689078223,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/010982.png": {
+      "verified": false,
+      "distance": 0.492255307411371,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/007565.png": {
+      "verified": false,
+      "distance": 0.5102997879213571,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/040639.png": {
+      "verified": false,
+      "distance": 0.6572450423385995,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/059151.png": {
+      "verified": false,
+      "distance": 0.643233463239085,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/096268.png": {
+      "verified": false,
+      "distance": 0.6584121838433245,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/002038.png": {
+      "verified": false,
+      "distance": 0.564844646666552,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/094126.png": {
+      "verified": false,
+      "distance": 0.46204419113099515,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/026416.png": {
+      "verified": false,
+      "distance": 0.712196787670347,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006249.png": {
+      "verified": false,
+      "distance": 0.6852586956146228,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005389.png": {
+      "verified": false,
+      "distance": 0.6844469728991112,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/075110.png": {
+      "verified": false,
+      "distance": 0.5085970737400427,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/014696.png": {
+      "verified": false,
+      "distance": 0.4735752140635523,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/022515.png": {
+      "verified": false,
+      "distance": 0.535409455014612,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/007670.png": {
+      "verified": false,
+      "distance": 0.5513881285213034,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/012174.png": {
+      "verified": false,
+      "distance": 0.6263564148263404,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/036379.png": {
+      "verified": false,
+      "distance": 0.5735834443911798,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/051958.png": {
+      "verified": false,
+      "distance": 0.6203112474909869,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/011150.png": {
+      "verified": false,
+      "distance": 0.6680929775730621,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/016621.png": {
+      "verified": false,
+      "distance": 0.4674267414848634,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/007075.png": {
+      "verified": false,
+      "distance": 0.5911315598143032,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/069083.png": {
+      "verified": false,
+      "distance": 0.46957214857285556,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006231.png": {
+      "verified": false,
+      "distance": 0.5345733348656074,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/096832.png": {
+      "verified": false,
+      "distance": 0.43036449969582025,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/016560.png": {
+      "verified": false,
+      "distance": 0.6420123635761863,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/095353.png": {
+      "verified": false,
+      "distance": 0.5196227434133859,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005258.png": {
+      "verified": false,
+      "distance": 0.5748140947557557,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/043260.png": {
+      "verified": false,
+      "distance": 0.6353985507212656,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/008684.png": {
+      "verified": false,
+      "distance": 0.46927040720323676,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/029991.png": {
+      "verified": false,
+      "distance": 0.5425538842072601,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/001400.png": {
+      "verified": false,
+      "distance": 0.5477881132971332,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/025527.png": {
+      "verified": false,
+      "distance": 0.5884008015816126,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/017972.png": {
+      "verified": false,
+      "distance": 0.5281274952851529,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/030503.png": {
+      "verified": false,
+      "distance": 0.5402022241603601,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/002433.png": {
+      "verified": false,
+      "distance": 0.6701724720127694,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006125.png": {
+      "verified": false,
+      "distance": 0.571746571894866,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/091829.png": {
+      "verified": false,
+      "distance": 0.6796369097964889,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/004773.png": {
+      "verified": false,
+      "distance": 0.6953401597029065,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/043717.png": {
+      "verified": false,
+      "distance": 0.40063992742296306,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/073366.png": {
+      "verified": false,
+      "distance": 0.4741392562480464,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/058515.png": {
+      "verified": false,
+      "distance": 0.5456979477858175,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006142.png": {
+      "verified": false,
+      "distance": 0.6229751217448145,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/015222.png": {
+      "verified": false,
+      "distance": 0.5017579467203921,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/079987.png": {
+      "verified": false,
+      "distance": 0.6036566129956946,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005338.png": {
+      "verified": false,
+      "distance": 0.5355951330253108,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/062967.png": {
+      "verified": false,
+      "distance": 0.6341363749403051,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/015734.png": {
+      "verified": false,
+      "distance": 0.4176503982320421,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/011973.png": {
+      "verified": false,
+      "distance": 0.7162079426725093,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/080464.png": {
+      "verified": false,
+      "distance": 0.6308994770552709,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/008149.png": {
+      "verified": false,
+      "distance": 0.5806254539018656,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/004887.png": {
+      "verified": false,
+      "distance": 0.521562116285259,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/000260.png": {
+      "verified": false,
+      "distance": 0.65844864681245,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/064631.png": {
+      "verified": false,
+      "distance": 0.6125317139966218,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/010439.png": {
+      "verified": false,
+      "distance": 0.6276632591421543,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/069597.png": {
+      "verified": false,
+      "distance": 0.6567216282448138,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/010971.png": {
+      "verified": false,
+      "distance": 0.638771300959062,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/088887.png": {
+      "verified": false,
+      "distance": 0.6132472581649662,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/009982.png": {
+      "verified": false,
+      "distance": 0.5309364366004043,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/092280.png": {
+      "verified": false,
+      "distance": 0.5838366048337655,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/010065.png": {
+      "verified": false,
+      "distance": 0.6459126914151602,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/013033.png": {
+      "verified": false,
+      "distance": 0.6477582985290111,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/031115.png": {
+      "verified": false,
+      "distance": 0.5260025002382527,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/030758.png": {
+      "verified": false,
+      "distance": 0.6011416845277939,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/013542.png": {
+      "verified": false,
+      "distance": 0.6337215116604153,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/015771.png": {
+      "verified": false,
+      "distance": 0.5020253329708233,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/036780.png": {
+      "verified": false,
+      "distance": 0.6416128706061541,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/083825.png": {
+      "verified": false,
+      "distance": 0.6787144249555024,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/085461.png": {
+      "verified": false,
+      "distance": 0.44121993045233066,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/077303.png": {
+      "verified": false,
+      "distance": 0.5714789351882925,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/074957.png": {
+      "verified": false,
+      "distance": 0.7008740617113722,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/003304.png": {
+      "verified": false,
+      "distance": 0.5550860426369396,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/066219.png": {
+      "verified": true,
+      "distance": 0.389730655850531,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/012361.png": {
+      "verified": false,
+      "distance": 0.6298839244031607,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/050599.png": {
+      "verified": false,
+      "distance": 0.5485675747017409,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/057672.png": {
+      "verified": false,
+      "distance": 0.5974553593092342,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/000957.png": {
+      "verified": false,
+      "distance": 0.6127085371200487,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/092203.png": {
+      "verified": false,
+      "distance": 0.549241378609086,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/013094.png": {
+      "verified": false,
+      "distance": 0.6968382797765563,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/012160.png": {
+      "verified": false,
+      "distance": 0.6380443761719089,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/059311.png": {
+      "verified": false,
+      "distance": 0.44408615559622755,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/014462.png": {
+      "verified": false,
+      "distance": 0.6361577189826262,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/007681.png": {
+      "verified": false,
+      "distance": 0.5706873258028775,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/030649.png": {
+      "verified": false,
+      "distance": 0.513787568131882,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/025564.png": {
+      "verified": false,
+      "distance": 0.49231219648548463,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/015039.png": {
+      "verified": false,
+      "distance": 0.4983374883758036,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/010066.png": {
+      "verified": false,
+      "distance": 0.46740966617413204,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/030929.png": {
+      "verified": false,
+      "distance": 0.5671138210772435,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/083909.png": {
+      "verified": false,
+      "distance": 0.6153594146198631,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/082083.png": {
+      "verified": false,
+      "distance": 0.578582232288007,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/054393.png": {
+      "verified": false,
+      "distance": 0.5331069590231983,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/007728.png": {
+      "verified": false,
+      "distance": 0.7190696092397386,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/071909.png": {
+      "verified": false,
+      "distance": 0.502342924298625,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/077266.png": {
+      "verified": false,
+      "distance": 0.6361074395791506,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/026182.png": {
+      "verified": false,
+      "distance": 0.7553092206650359,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/003481.png": {
+      "verified": false,
+      "distance": 0.4244216265793298,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/014173.png": {
+      "verified": false,
+      "distance": 0.5282387154158938,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/002626.png": {
+      "verified": false,
+      "distance": 0.5489424173641659,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/009039.png": {
+      "verified": false,
+      "distance": 0.5904196679734133,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/016747.png": {
+      "verified": false,
+      "distance": 0.5757938515836478,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/011453.png": {
+      "verified": false,
+      "distance": 0.6899589241278967,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/085791.png": {
+      "verified": false,
+      "distance": 0.4013129366755285,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/010543.png": {
+      "verified": false,
+      "distance": 0.5117892148542251,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/065474.png": {
+      "verified": false,
+      "distance": 0.45696570635390155,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/001098.png": {
+      "verified": false,
+      "distance": 0.6032065923898509,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/002294.png": {
+      "verified": false,
+      "distance": 0.5228191430520877,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006347.png": {
+      "verified": false,
+      "distance": 0.6867150417608501,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/039760.png": {
+      "verified": false,
+      "distance": 0.688514313751346,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/016618.png": {
+      "verified": false,
+      "distance": 0.5386840214225987,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/017567.png": {
+      "verified": false,
+      "distance": 0.5033846602594951,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/077620.png": {
+      "verified": false,
+      "distance": 0.5356463495764028,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/014577.png": {
+      "verified": false,
+      "distance": 0.577601264348561,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/054667.png": {
+      "verified": false,
+      "distance": 0.49563035561642566,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/008713.png": {
+      "verified": false,
+      "distance": 0.5877113559556115,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/001181.png": {
+      "verified": false,
+      "distance": 0.5573391805687975,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/088126.png": {
+      "verified": false,
+      "distance": 0.595500667478386,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/003438.png": {
+      "verified": false,
+      "distance": 0.7182791177813361,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/079735.png": {
+      "verified": false,
+      "distance": 0.5099095264482354,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/082216.png": {
+      "verified": false,
+      "distance": 0.607422583111356,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/058476.png": {
+      "verified": false,
+      "distance": 0.5734605124351035,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/012341.png": {
+      "verified": false,
+      "distance": 0.6289903809551719,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006064.png": {
+      "verified": false,
+      "distance": 0.5122696655981553,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/093400.png": {
+      "verified": false,
+      "distance": 0.47239381565821636,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/034489.png": {
+      "verified": false,
+      "distance": 0.611255559319187,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/059330.png": {
+      "verified": false,
+      "distance": 0.5500099364886133,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/037923.png": {
+      "verified": false,
+      "distance": 0.5773984574409712,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/003939.png": {
+      "verified": false,
+      "distance": 0.6000488368907406,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/057092.png": {
+      "verified": false,
+      "distance": 0.7517611580385161,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/001858.png": {
+      "verified": false,
+      "distance": 0.5451993541146722,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/039514.png": {
+      "verified": false,
+      "distance": 0.5642292595443769,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/003410.png": {
+      "verified": false,
+      "distance": 0.5938515860608926,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/080984.png": {
+      "verified": false,
+      "distance": 0.573702919818543,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006203.png": {
+      "verified": false,
+      "distance": 0.6350657118213108,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/010539.png": {
+      "verified": false,
+      "distance": 0.5923896696413318,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/072801.png": {
+      "verified": false,
+      "distance": 0.5776451481775515,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/008839.png": {
+      "verified": false,
+      "distance": 0.6030720916779926,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/011536.png": {
+      "verified": false,
+      "distance": 0.5831356875529388,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005561.png": {
+      "verified": false,
+      "distance": 0.6365016793214668,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/011104.png": {
+      "verified": false,
+      "distance": 0.6399514258677327,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/029037.png": {
+      "verified": false,
+      "distance": 0.5416344304482591,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/066447.png": {
+      "verified": false,
+      "distance": 0.6747924726469617,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/069464.png": {
+      "verified": false,
+      "distance": 0.4466776322376812,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/015117.png": {
+      "verified": false,
+      "distance": 0.4280114914381107,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/007821.png": {
+      "verified": false,
+      "distance": 0.5463358984855042,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/015860.png": {
+      "verified": false,
+      "distance": 0.574998416193754,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005788.png": {
+      "verified": false,
+      "distance": 0.5875463907907752,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/052887.png": {
+      "verified": false,
+      "distance": 0.6338077087125178,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/015668.png": {
+      "verified": false,
+      "distance": 0.6324172799605221,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006041.png": {
+      "verified": false,
+      "distance": 0.4986032381329135,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/029406.png": {
+      "verified": false,
+      "distance": 0.6287862010249696,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/055657.png": {
+      "verified": false,
+      "distance": 0.5963828809131733,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/012394.png": {
+      "verified": false,
+      "distance": 0.6249458762195167,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/077616.png": {
+      "verified": false,
+      "distance": 0.5469138560217657,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/019113.png": {
+      "verified": false,
+      "distance": 0.5032186783589421,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/054682.png": {
+      "verified": false,
+      "distance": 0.603454792645128,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/049649.png": {
+      "verified": false,
+      "distance": 0.6035519614107762,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/094461.png": {
+      "verified": false,
+      "distance": 0.6574705964740106,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/085995.png": {
+      "verified": false,
+      "distance": 0.6138575250581358,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/061639.png": {
+      "verified": false,
+      "distance": 0.48079740124261616,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/061351.png": {
+      "verified": false,
+      "distance": 0.6351372205515182,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/093635.png": {
+      "verified": false,
+      "distance": 0.6612887945293795,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005108.png": {
+      "verified": false,
+      "distance": 0.6141974398682355,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/081227.png": {
+      "verified": false,
+      "distance": 0.6014629244824923,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/096049.png": {
+      "verified": false,
+      "distance": 0.5239359337778307,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/008138.png": {
+      "verified": false,
+      "distance": 0.6295008958235223,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/098232.png": {
+      "verified": false,
+      "distance": 0.5414628491714442,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/041767.png": {
+      "verified": false,
+      "distance": 0.6526585693274227,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/013550.png": {
+      "verified": false,
+      "distance": 0.6109232462035603,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/068364.png": {
+      "verified": false,
+      "distance": 0.6135742992883321,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/023364.png": {
+      "verified": false,
+      "distance": 0.6847972792710894,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/067336.png": {
+      "verified": false,
+      "distance": 0.5902310848504438,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/004250.png": {
+      "verified": false,
+      "distance": 0.5587858397593579,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006061.png": {
+      "verified": false,
+      "distance": 0.542919445953811,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/094541.png": {
+      "verified": false,
+      "distance": 0.5743149070464507,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/013076.png": {
+      "verified": false,
+      "distance": 0.7382428902958139,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/031458.png": {
+      "verified": false,
+      "distance": 0.606409778947888,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005817.png": {
+      "verified": false,
+      "distance": 0.5406093376341279,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005316.png": {
+      "verified": false,
+      "distance": 0.45911843384615936,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/014146.png": {
+      "verified": false,
+      "distance": 0.6105920298094163,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005717.png": {
+      "verified": false,
+      "distance": 0.48491683895991566,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/030414.png": {
+      "verified": false,
+      "distance": 0.6531526372927532,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/093772.png": {
+      "verified": false,
+      "distance": 0.6057798135240746,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/021190.png": {
+      "verified": false,
+      "distance": 0.6616170382480058,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/082826.png": {
+      "verified": false,
+      "distance": 0.5126032583816167,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/092804.png": {
+      "verified": false,
+      "distance": 0.546284148750692,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/011789.png": {
+      "verified": false,
+      "distance": 0.6093864759491782,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/070533.png": {
+      "verified": false,
+      "distance": 0.5599743343604973,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/004972.png": {
+      "verified": false,
+      "distance": 0.6020935601214155,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/094184.png": {
+      "verified": false,
+      "distance": 0.473910907915693,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/083805.png": {
+      "verified": false,
+      "distance": 0.5245966803339719,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/032139.png": {
+      "verified": false,
+      "distance": 0.589494933800609,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/009806.png": {
+      "verified": false,
+      "distance": 0.5964183868964043,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/001263.png": {
+      "verified": false,
+      "distance": 0.46232390342034124,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/001296.png": {
+      "verified": false,
+      "distance": 0.7367839155584626,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/081475.png": {
+      "verified": false,
+      "distance": 0.5636506629079812,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/014675.png": {
+      "verified": false,
+      "distance": 0.7012383240156772,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005528.png": {
+      "verified": false,
+      "distance": 0.5634560735273397,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005273.png": {
+      "verified": false,
+      "distance": 0.7063945042967857,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/055163.png": {
+      "verified": false,
+      "distance": 0.6658736939127812,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/043449.png": {
+      "verified": false,
+      "distance": 0.6167426306681811,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/000308.png": {
+      "verified": false,
+      "distance": 0.6033821117213811,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/089549.png": {
+      "verified": false,
+      "distance": 0.6320616827398837,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/020694.png": {
+      "verified": false,
+      "distance": 0.6418245320521374,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/037476.png": {
+      "verified": false,
+      "distance": 0.463772219003699,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/069392.png": {
+      "verified": false,
+      "distance": 0.6529757497885532,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/053207.png": {
+      "verified": false,
+      "distance": 0.5650485397984042,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/079706.png": {
+      "verified": false,
+      "distance": 0.6734632822634647,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/000291.png": {
+      "verified": false,
+      "distance": 0.6058373185423032,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/051985.png": {
+      "verified": false,
+      "distance": 0.5164153572994795,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/069356.png": {
+      "verified": false,
+      "distance": 0.48243374655894644,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/002566.png": {
+      "verified": false,
+      "distance": 0.5875825617198408,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/094175.png": {
+      "verified": false,
+      "distance": 0.5254221898492666,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/037283.png": {
+      "verified": false,
+      "distance": 0.5286476595327292,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/022083.png": {
+      "verified": false,
+      "distance": 0.5745655062750326,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/023301.png": {
+      "verified": false,
+      "distance": 0.5801936181370786,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/026216.png": {
+      "verified": false,
+      "distance": 0.6191057259690311,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/089541.png": {
+      "verified": false,
+      "distance": 0.5108456251448366,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/077859.png": {
+      "verified": false,
+      "distance": 0.6626248288090524,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/052785.png": {
+      "verified": false,
+      "distance": 0.5833601107533017,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/029196.png": {
+      "verified": false,
+      "distance": 0.4968549651464149,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/059050.png": {
+      "verified": false,
+      "distance": 0.5869855922282238,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/080548.png": {
+      "verified": false,
+      "distance": 0.48814875089024845,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/044811.png": {
+      "verified": false,
+      "distance": 0.5149450068613998,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/088951.png": {
+      "verified": false,
+      "distance": 0.6302451462776151,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/054802.png": {
+      "verified": false,
+      "distance": 0.5765665048785705,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/007750.png": {
+      "verified": false,
+      "distance": 0.6436098049910242,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/016312.png": {
+      "verified": false,
+      "distance": 0.5478922375812084,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/001285.png": {
+      "verified": false,
+      "distance": 0.6383930162609468,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/044923.png": {
+      "verified": false,
+      "distance": 0.5252014790798678,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/065852.png": {
+      "verified": false,
+      "distance": 0.5668498862743918,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/030131.png": {
+      "verified": false,
+      "distance": 0.6484427570287123,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/092276.png": {
+      "verified": false,
+      "distance": 0.5366483943736948,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/069387.png": {
+      "verified": false,
+      "distance": 0.5982733007986359,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/013615.png": {
+      "verified": false,
+      "distance": 0.6081694397536517,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/011358.png": {
+      "verified": false,
+      "distance": 0.5709672345913513,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/010235.png": {
+      "verified": false,
+      "distance": 0.5846240305852604,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/061020.png": {
+      "verified": false,
+      "distance": 0.64697636076286,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/007070.png": {
+      "verified": false,
+      "distance": 0.5592715452905643,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/017368.png": {
+      "verified": false,
+      "distance": 0.4983460812402162,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/015817.png": {
+      "verified": false,
+      "distance": 0.6526015319626615,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/053824.png": {
+      "verified": false,
+      "distance": 0.5977721620049741,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/076433.png": {
+      "verified": false,
+      "distance": 0.5824960131045502,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/008959.png": {
+      "verified": false,
+      "distance": 0.5358224143634424,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/078335.png": {
+      "verified": false,
+      "distance": 0.5608895246754425,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/077977.png": {
+      "verified": false,
+      "distance": 0.47881315249860623,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/073934.png": {
+      "verified": false,
+      "distance": 0.7537102033596109,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/078533.png": {
+      "verified": false,
+      "distance": 0.5731949886830526,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/020152.png": {
+      "verified": false,
+      "distance": 0.6804597508067822,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/003206.png": {
+      "verified": false,
+      "distance": 0.4865355571711373,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006365.png": {
+      "verified": false,
+      "distance": 0.6064505867491752,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/035601.png": {
+      "verified": false,
+      "distance": 0.6837215864439037,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/082681.png": {
+      "verified": false,
+      "distance": 0.42128430068107525,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005549.png": {
+      "verified": false,
+      "distance": 0.6106807744344325,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/042093.png": {
+      "verified": false,
+      "distance": 0.5240437382035639,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/016645.png": {
+      "verified": false,
+      "distance": 0.6116753733421283,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/014710.png": {
+      "verified": false,
+      "distance": 0.6516521278864355,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/008717.png": {
+      "verified": false,
+      "distance": 0.6264319010261781,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/043265.png": {
+      "verified": false,
+      "distance": 0.5645312549002992,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/056024.png": {
+      "verified": false,
+      "distance": 0.6044708902677336,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/094370.png": {
+      "verified": false,
+      "distance": 0.5563848109880849,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/010288.png": {
+      "verified": false,
+      "distance": 0.6885132340202503,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/094458.png": {
+      "verified": false,
+      "distance": 0.5332637779324066,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/062797.png": {
+      "verified": false,
+      "distance": 0.5764080774430063,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/014717.png": {
+      "verified": false,
+      "distance": 0.6905124009656483,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/001810.png": {
+      "verified": false,
+      "distance": 0.5305352453865089,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/000386.png": {
+      "verified": false,
+      "distance": 0.6382390528925685,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/077119.png": {
+      "verified": false,
+      "distance": 0.5821080792318678,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/009774.png": {
+      "verified": false,
+      "distance": 0.5699351745214275,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/049731.png": {
+      "verified": false,
+      "distance": 0.6338762866265445,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/007496.png": {
+      "verified": false,
+      "distance": 0.6661286499891705,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/017963.png": {
+      "verified": false,
+      "distance": 0.5414470382030058,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/071269.png": {
+      "verified": false,
+      "distance": 0.5429394443275455,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/068230.png": {
+      "verified": false,
+      "distance": 0.6278908286768566,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/014398.png": {
+      "verified": false,
+      "distance": 0.6208830791998845,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/008867.png": {
+      "verified": false,
+      "distance": 0.61565012378159,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/074693.png": {
+      "verified": false,
+      "distance": 0.6038102643294183,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/041954.png": {
+      "verified": false,
+      "distance": 0.6546406196742052,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/001767.png": {
+      "verified": false,
+      "distance": 0.5859381981701511,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/069221.png": {
+      "verified": false,
+      "distance": 0.5960352649070264,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/037326.png": {
+      "verified": false,
+      "distance": 0.5603288560459494,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/035759.png": {
+      "verified": false,
+      "distance": 0.5346171688523387,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/003766.png": {
+      "verified": false,
+      "distance": 0.6087812274556703,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/064338.png": {
+      "verified": false,
+      "distance": 0.5060662408263954,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/029928.png": {
+      "verified": false,
+      "distance": 0.5979296575596345,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/019287.png": {
+      "verified": false,
+      "distance": 0.629719864763445,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/008165.png": {
+      "verified": false,
+      "distance": 0.5207699056551724,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005812.png": {
+      "verified": false,
+      "distance": 0.5940816170259562,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/011901.png": {
+      "verified": false,
+      "distance": 0.5170558563110168,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/003657.png": {
+      "verified": false,
+      "distance": 0.6151845698354702,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/031661.png": {
+      "verified": false,
+      "distance": 0.7005877788723545,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/003226.png": {
+      "verified": false,
+      "distance": 0.5848519836113104,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/056667.png": {
+      "verified": false,
+      "distance": 0.6209122153245032,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/015027.png": {
+      "verified": false,
+      "distance": 0.6201975528252659,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/018790.png": {
+      "verified": false,
+      "distance": 0.5226548117651901,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/000799.png": {
+      "verified": false,
+      "distance": 0.5217029134656079,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/096565.png": {
+      "verified": false,
+      "distance": 0.5846335707911496,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/086454.png": {
+      "verified": false,
+      "distance": 0.6209154338893454,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/018418.png": {
+      "verified": false,
+      "distance": 0.5692413231834728,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/016771.png": {
+      "verified": false,
+      "distance": 0.591992034392764,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/063804.png": {
+      "verified": false,
+      "distance": 0.5826745356086267,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/002844.png": {
+      "verified": false,
+      "distance": 0.6637457532644482,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/028258.png": {
+      "verified": false,
+      "distance": 0.5369302918171931,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/057682.png": {
+      "verified": false,
+      "distance": 0.5628206261512969,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/015265.png": {
+      "verified": false,
+      "distance": 0.6377293793618288,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/074928.png": {
+      "verified": false,
+      "distance": 0.6398475011427351,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/021381.png": {
+      "verified": false,
+      "distance": 0.7049289778329331,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005836.png": {
+      "verified": false,
+      "distance": 0.6413161831818277,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/097703.png": {
+      "verified": false,
+      "distance": 0.6283314012436969,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/088665.png": {
+      "verified": false,
+      "distance": 0.6398311723403804,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/014910.png": {
+      "verified": false,
+      "distance": 0.6206274036630507,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/009633.png": {
+      "verified": false,
+      "distance": 0.5662008435614988,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/014082.png": {
+      "verified": false,
+      "distance": 0.620363857635952,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006489.png": {
+      "verified": false,
+      "distance": 0.6366809078547458,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/077305.png": {
+      "verified": false,
+      "distance": 0.6198443824576838,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/011820.png": {
+      "verified": false,
+      "distance": 0.6386275982941579,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/067943.png": {
+      "verified": false,
+      "distance": 0.5314572563212185,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/001611.png": {
+      "verified": false,
+      "distance": 0.4494935789583028,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/016657.png": {
+      "verified": false,
+      "distance": 0.7449376231788472,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/064765.png": {
+      "verified": false,
+      "distance": 0.5711370476840283,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006525.png": {
+      "verified": false,
+      "distance": 0.5129225665778496,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/056516.png": {
+      "verified": false,
+      "distance": 0.4929900813473169,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/071451.png": {
+      "verified": false,
+      "distance": 0.5856776166200968,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/011884.png": {
+      "verified": false,
+      "distance": 0.6106167161508984,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/067565.png": {
+      "verified": false,
+      "distance": 0.5881697038984907,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/016367.png": {
+      "verified": false,
+      "distance": 0.494368146116934,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/010478.png": {
+      "verified": false,
+      "distance": 0.5236778984569272,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/044055.png": {
+      "verified": false,
+      "distance": 0.5371684102523363,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/062461.png": {
+      "verified": false,
+      "distance": 0.5240827941236017,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006780.png": {
+      "verified": false,
+      "distance": 0.5510164099788508,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/030554.png": {
+      "verified": false,
+      "distance": 0.6360886816909805,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/042036.png": {
+      "verified": false,
+      "distance": 0.5787366138312782,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/013435.png": {
+      "verified": false,
+      "distance": 0.702721075136233,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/062416.png": {
+      "verified": false,
+      "distance": 0.6207820732089623,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/062041.png": {
+      "verified": false,
+      "distance": 0.7638689180179006,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/068437.png": {
+      "verified": false,
+      "distance": 0.6010653528092158,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005598.png": {
+      "verified": false,
+      "distance": 0.5991927246477669,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/069829.png": {
+      "verified": false,
+      "distance": 0.42428312280474334,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/004348.png": {
+      "verified": false,
+      "distance": 0.6190899342294706,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/011755.png": {
+      "verified": false,
+      "distance": 0.5538954810794754,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/044458.png": {
+      "verified": false,
+      "distance": 0.6865877849565961,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/082511.png": {
+      "verified": false,
+      "distance": 0.617823013674613,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/046578.png": {
+      "verified": false,
+      "distance": 0.502899625819341,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/014763.png": {
+      "verified": false,
+      "distance": 0.615149038407852,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/019573.png": {
+      "verified": false,
+      "distance": 0.5925114533441942,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/088544.png": {
+      "verified": false,
+      "distance": 0.4769164180639853,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/014206.png": {
+      "verified": false,
+      "distance": 0.6801806599653726,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/040240.png": {
+      "verified": false,
+      "distance": 0.6943245716940779,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/015064.png": {
+      "verified": false,
+      "distance": 0.46979232971386564,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/012637.png": {
+      "verified": false,
+      "distance": 0.5124233986701691,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/046960.png": {
+      "verified": false,
+      "distance": 0.6456024372830405,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/064573.png": {
+      "verified": false,
+      "distance": 0.550668292372214,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/004761.png": {
+      "verified": false,
+      "distance": 0.4671891110388958,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/003296.png": {
+      "verified": false,
+      "distance": 0.5949603278058659,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/072809.png": {
+      "verified": false,
+      "distance": 0.5764276320776464,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/070786.png": {
+      "verified": false,
+      "distance": 0.619451127254045,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/000210.png": {
+      "verified": false,
+      "distance": 0.5596027844830539,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006719.png": {
+      "verified": false,
+      "distance": 0.4815641442413241,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/010955.png": {
+      "verified": false,
+      "distance": 0.6240268817487639,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006016.png": {
+      "verified": false,
+      "distance": 0.6378339378976177,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/015212.png": {
+      "verified": false,
+      "distance": 0.5528135924983869,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/024514.png": {
+      "verified": false,
+      "distance": 0.6095585645326631,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/004990.png": {
+      "verified": false,
+      "distance": 0.5085978565753149,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/014548.png": {
+      "verified": false,
+      "distance": 0.5921634387485509,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/000449.png": {
+      "verified": false,
+      "distance": 0.6027073141749144,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/001124.png": {
+      "verified": false,
+      "distance": 0.6784990294237878,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006398.png": {
+      "verified": false,
+      "distance": 0.6000286853199908,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/015868.png": {
+      "verified": false,
+      "distance": 0.5573337704479213,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/022678.png": {
+      "verified": false,
+      "distance": 0.6818391766286795,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/007186.png": {
+      "verified": false,
+      "distance": 0.49405123124459827,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/059037.png": {
+      "verified": false,
+      "distance": 0.5389386779046406,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/085650.png": {
+      "verified": false,
+      "distance": 0.6680716745477875,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/025400.png": {
+      "verified": false,
+      "distance": 0.48945291541390656,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/097179.png": {
+      "verified": false,
+      "distance": 0.5309636474345565,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/023016.png": {
+      "verified": false,
+      "distance": 0.6271960074197391,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/087448.png": {
+      "verified": false,
+      "distance": 0.6021789201859691,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/053145.png": {
+      "verified": false,
+      "distance": 0.5863108376929015,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/001284.png": {
+      "verified": false,
+      "distance": 0.5033576495621538,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/017868.png": {
+      "verified": false,
+      "distance": 0.6677052974702669,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/021023.png": {
+      "verified": false,
+      "distance": 0.656007285322226,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/022027.png": {
+      "verified": false,
+      "distance": 0.49433081562236203,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/004876.png": {
+      "verified": false,
+      "distance": 0.5631353651475908,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/096669.png": {
+      "verified": false,
+      "distance": 0.650395976437009,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005570.png": {
+      "verified": false,
+      "distance": 0.5453325327006666,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006120.png": {
+      "verified": false,
+      "distance": 0.7672624332974645,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005120.png": {
+      "verified": false,
+      "distance": 0.561062362060821,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/012542.png": {
+      "verified": false,
+      "distance": 0.49189878784497676,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005931.png": {
+      "verified": false,
+      "distance": 0.5642309027990222,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006093.png": {
+      "verified": false,
+      "distance": 0.6429092045149956,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/014095.png": {
+      "verified": false,
+      "distance": 0.6795087745853724,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/043803.png": {
+      "verified": false,
+      "distance": 0.5958274472228615,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/012064.png": {
+      "verified": false,
+      "distance": 0.6875901701670037,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/079135.png": {
+      "verified": false,
+      "distance": 0.6521978634198695,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/009593.png": {
+      "verified": false,
+      "distance": 0.5285883655063339,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/003364.png": {
+      "verified": false,
+      "distance": 0.6221870683024159,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/006051.png": {
+      "verified": false,
+      "distance": 0.6692931413409717,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/030310.png": {
+      "verified": false,
+      "distance": 0.6641234746471776,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/000056.png": {
+      "verified": false,
+      "distance": 0.6461649377254134,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/047022.png": {
+      "verified": false,
+      "distance": 0.5095006226006253,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/009717.png": {
+      "verified": false,
+      "distance": 0.6556159973426323,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/072920.png": {
+      "verified": false,
+      "distance": 0.5139020402858357,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/011425.png": {
+      "verified": false,
+      "distance": 0.6208754224081423,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/012506.png": {
+      "verified": false,
+      "distance": 0.6678101440861199,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/001874.png": {
+      "verified": false,
+      "distance": 0.509347101633723,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/008912.png": {
+      "verified": false,
+      "distance": 0.5730360742307371,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/057690.png": {
+      "verified": false,
+      "distance": 0.6279270064144167,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/002173.png": {
+      "verified": false,
+      "distance": 0.6558691640188046,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/012149.png": {
+      "verified": false,
+      "distance": 0.4228561417271247,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/061545.png": {
+      "verified": false,
+      "distance": 0.6030255717939645,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/005302.png": {
+      "verified": false,
+      "distance": 0.5292949380292453,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/053343.png": {
+      "verified": false,
+      "distance": 0.5265596880759328,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/084094.png": {
+      "verified": false,
+      "distance": 0.6206228649694496,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/038422.png": {
+      "verified": false,
+      "distance": 0.5669172627028182,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/001967.png": {
+      "verified": false,
+      "distance": 0.5931109927644259,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/090084.png": {
+      "verified": false,
+      "distance": 0.5415122774475736,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/014116.png": {
+      "verified": false,
+      "distance": 0.6662434176446769,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  },
+  {
+    "data/smpls/003868.png": {
+      "verified": false,
+      "distance": 0.6900074500419754,
+      "threshold": 0.4,
+      "model": "VGG-Face",
+      "detector_backend": "opencv",
+      "similarity_metric": "cosine"
+    }
+  }
+]
