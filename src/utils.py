@@ -10,7 +10,7 @@ from typing import Any, List, Tuple
 def write_file(obj: Any, path: str = None, sort: bool = False) -> str:
     if path is None:
         fname = hashlib.sha256().hexdigest()[:8]
-        path = f"results/json/{fname}.json"
+        path = f"results/{fname}.json"
     if sort == True and type(obj) is list:
         # TODO
         # obj = sorted(obj, key=lambda x: x.values(['distance'])

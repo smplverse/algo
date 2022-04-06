@@ -1,8 +1,9 @@
+"""
+# below to not relevant for now
 import pytest
 
-
 @pytest.mark.skip()
-def test_tensorrt_imports():
+def test_tensorrt_works():
     import tensorrt as trt
     assert trt.Builder(trt.Logger())
 
@@ -23,6 +24,12 @@ def test_pycuda_works():
 
     diff = (a_g * b_g).get() - a * b
     assert la.norm(diff) == 0
+"""
+
+
+def test_tensorflow_works_with_gpu():
+    import tensorflow as tf
+    assert tf.test.is_gpu_available()
 
 
 def test_opencv_works():

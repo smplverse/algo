@@ -10,5 +10,3 @@ RUN mkdir -p build && cd build && cmake ../opencv-4.5.5 && cmake --build . -- -j
 FROM base as main
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
-
-COPY . .
