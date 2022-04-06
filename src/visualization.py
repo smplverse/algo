@@ -5,9 +5,12 @@ from matplotlib import pyplot as plt
 
 def show_comparison_cv(face: np.ndarray,
                        smpl: np.ndarray,
+                       headless: bool,
                        final: bool = False,
                        write: bool = False,
                        fname: str = None):
+    if headless:
+        return
     if face.shape != smpl.shape:
         h, w, _ = smpl.shape
         face = cv2.resize(face, dsize=(w, h))
