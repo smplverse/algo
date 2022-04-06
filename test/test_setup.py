@@ -1,12 +1,6 @@
 import pytest
 
 
-def test_tensorflow_works_with_cuda():
-    import tensorflow
-    assert tensorflow.test.is_gpu_available()
-    assert tensorflow.test.is_built_with_gpu_support()
-
-
 @pytest.mark.skip()
 def test_tensorrt_imports():
     import tensorrt as trt

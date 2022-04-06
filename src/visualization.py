@@ -3,12 +3,12 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 
-def show_comparison_cv(face: np.ndarray,
-                       smpl: np.ndarray,
-                       headless: bool,
-                       final: bool = False,
-                       write: bool = False,
-                       fname: str = None):
+def show_comparison_cv(
+    face: np.ndarray,
+    smpl: np.ndarray,
+    headless: bool,
+    final: bool = False,
+):
     if headless:
         return
     if face.shape != smpl.shape:
@@ -21,9 +21,6 @@ def show_comparison_cv(face: np.ndarray,
         waitKeyTime = 0
     if cv2.waitKey(waitKeyTime) & 0xFF == ord('q'):
         cv2.destroyAllWindows()
-    if write and fname:
-        cv2.imwrite(f"results/{fname}.png", merged)
-        print("saved img %s" % fname)
 
 
 def show_comparison_mpl(face: np.ndarray, smpl: np.ndarray):

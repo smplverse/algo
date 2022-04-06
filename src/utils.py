@@ -7,17 +7,17 @@ import hashlib
 from typing import Any, List
 
 
-def write_file(obj: Any, fname: str = None, sort: bool = False) -> str:
-    if fname is None:
+def write_file(obj: Any, path: str = None, sort: bool = False) -> str:
+    if path is None:
         fname = hashlib.sha256().hexdigest()[:8]
-    path = f"results/{fname}.json"
+        path = f"results/json/{fname}.json"
     if sort == True and type(obj) is list:
         # TODO
         # obj = sorted(obj, key=lambda x: x.values(['distance'])
         pass
     with open(path, "w+") as f:
         f.write(json.dumps(obj, indent=2))
-    print(f"wrote {path}")
+    print("wrote json: %s" % path)
     return fname
 
 
