@@ -4,7 +4,7 @@ import os
 import json
 import hashlib
 
-from typing import Any, List
+from typing import Any, List, Tuple
 
 
 def write_file(obj: Any, path: str = None, sort: bool = False) -> str:
@@ -39,12 +39,13 @@ def load_smpls(base_path: str) -> List[np.ndarray]:
     return paths, smpls
 
 
-def get_face() -> np.ndarray:
+def get_face() -> Tuple[np.ndarray, str]:
     all_faces = os.listdir("data/input")
     rand = np.random.randint(len(all_faces))
     face_name = all_faces[rand]
     path = "data/input/" + face_name
     face = cv2.imread(path)
+    face_name = face_name.replace(".jpg", "")
     return face, face_name
 
 
