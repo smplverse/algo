@@ -5,6 +5,7 @@ numpy
 onnx
 nvidia-pyindex
 requests
+dlib
 
 # dev deps
 pytest
