@@ -14,7 +14,7 @@ services:
     ulimits:
       memlock: -1
       stack: 67108864
-    command: python main.py
+    command: python main.py --headless
     environment:
       - CHECKLIST_API_URL=http://api:8000
     deploy:

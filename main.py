@@ -21,8 +21,8 @@ if __name__ == "__main__":
     parser.add_argument("--headless", action="store_true")
     args = parser.parse_args()
 
-    detector_backend, model = get_backend_and_model()
-    print(detector_backend, model)
+    detector_backend, model_name = get_backend_and_model()
+    print(detector_backend, model_name)
     for face, face_name in get_validation_zip():
         print('running:', face_name)
         match(
@@ -30,4 +30,5 @@ if __name__ == "__main__":
             detector_backend=detector_backend,
             face=face,
             face_name=face_name,
+            model_name=model_name,
         )

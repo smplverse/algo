@@ -12,23 +12,29 @@ def match(
     write=True,
     face: np.ndarray = None,
     face_name: str = None,
-    model_name="VGG_Face",
+    model_name="VGG-Face",
     detector_backend="opencv",
 ):
     tic = time.time()
-    if not face and not face_name:
+    if face is None or face_name is None:
         face, face_name = get_face()
     paths, smpls = load_smpls("data/smpls")
     scores = []
     res = []
+    inference_times = []
+    model = DeepFace.build_model(model_name)
+    print("built", model_name)
     for path, smpl in zip(paths, smpls):
         try:
+            inference_tic = time.time()
             result = DeepFace.verify(
                 img1_path=face,
                 img2_path=smpl,
-                model_name=model_name,
+                model=model,
                 detector_backend=detector_backend,
             )
+            inference_toc = time.time()
+            inference_times.append(float(inference_tic - inference_toc))
             res.append({path: result})
             show_comparison_cv(face, smpl, headless)
             distance = result['distance']
@@ -40,8 +46,10 @@ def match(
     best_score_idx = np.argmin(scores)
     best_match = scores[best_score_idx]
     toc = time.time()
+    print("detection rate: %d/%d" % (np.bincount(scores), len(scores)))
     print("best match: %.2f" % best_match)
-    print("time elapsed: %.2fs" % float(toc - tic))
+    print("total time elapsed: %.2fs" % float(toc - tic))
+    print("average time per image: %.2fs" % np.mean(inference_times))
     smpl = smpls[best_score_idx]
     if write:
         merged = np.concatenate((face, smpl), axis=1)
