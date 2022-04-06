@@ -1,12 +1,8 @@
-
-
 opencv
 ------
 success rate: 0.417
 total time elapsed: 24.46s
 mean time per image: 0.0244s
-deploy.prototxt will be downloaded...
-res10_300x300_ssd_iter_140000.caffemodel will be downloaded...
 
 
 ssd
@@ -28,7 +24,6 @@ mtcnn
 success rate: 0.941
 total time elapsed: 289.77s
 mean time per image: 0.2896s
-retinaface.h5 will be downloaded from the url https://github.com/serengil/deepface_models/releases/download/v1.0/retinaface.h5
 
 
 retinaface
