@@ -33,4 +33,5 @@ if __name__ == "__main__":
             face=face,
             face_name=face_name,
             model=model,
+            model_name=model_name,
         )

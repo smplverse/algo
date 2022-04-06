@@ -1,6 +1,8 @@
 import cv2
 import numpy as np
+
 from matplotlib import pyplot as plt
+from src.utils import merge
 
 
 def show_comparison_cv(
@@ -11,10 +13,7 @@ def show_comparison_cv(
 ):
     if headless:
         return
-    if face.shape != smpl.shape:
-        h, w, _ = smpl.shape
-        face = cv2.resize(face, dsize=(w, h))
-    merged = np.concatenate((face, smpl), axis=1)
+    merged = merge(face, smpl)
     cv2.imshow("img", merged)
     waitKeyTime = 1
     if final:

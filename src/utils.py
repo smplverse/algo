@@ -56,3 +56,11 @@ def how_many_total_computations():
         total_computations += total_smpls
         total_smpls -= 1
     print(f"{total_computations:,}")
+
+
+def merge(face: np.ndarray, smpl: np.ndarray) -> np.ndarray:
+    if face.shape != smpl.shape:
+        h, w, _ = smpl.shape
+        face = cv2.resize(face, dsize=(w, h))
+    merged = np.concatenate((face, smpl), axis=1)
+    return merged
