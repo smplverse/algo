@@ -6,6 +6,7 @@ onnx
 nvidia-pyindex
 requests
 dlib
+model_profiler
 
 # dev deps
 pytest
