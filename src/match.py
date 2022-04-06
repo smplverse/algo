@@ -2,34 +2,36 @@ import cv2
 import numpy as np
 import time
 
+from typing import Any, List
 from deepface import DeepFace
-from src.utils import write_file, load_smpls, get_face, merge
+from src.utils import write_file, merge
+from src.data import get_smpls
 from src.visualization import show_comparison_cv
-from typing import Any
+
+
+def log_stats(scores: List[float]) -> int:
+    best_score_idx = np.argmin(scores)
+    best_match = scores[best_score_idx]
+    landed = np.count_nonzero(np.array(scores) != 1)
+    print("detection rate: %d/%d" % (landed, len(scores)))
+    print("best match: %.2f" % best_match)
+    return best_score_idx
 
 
 def match(
     headless: bool,
-    write=True,
-    face: np.ndarray = None,
-    face_name: str = None,
-    model: Any = None,
-    model_name: Any = None,
-    detector_backend: str = None,
+    face: np.ndarray,
+    face_name: str,
+    model: Any,
+    model_name: Any,
+    detector_backend: str,
 ):
-    if face is None or face_name is None:
-        face, face_name = get_face()
-    if not model and not model_name:
-        detector_backend = "opencv"
-        model_name = "VGG-Face"
-        model = DeepFace.build_model(model_name)
-        print("built default (VGG-Face)")
-    paths, smpls = load_smpls("data/smpls")
+    paths, smpls = get_smpls("data/smpls")
     scores = []
     res = []
     inference_times = []
     tic = time.time()
-    for path, smpl in zip(paths, smpls):
+    for idx, [path, smpl] in enumerate(zip(paths, smpls)):
         try:
             inference_tic = time.time()
             result = DeepFace.verify(
@@ -41,29 +43,24 @@ def match(
             inference_toc = time.time()
             inference_times.append(float(inference_toc - inference_tic))
             res.append({path: result})
-            show_comparison_cv(face, smpl, headless)
+            show_comparison_cv(face, smpl)
             distance = result['distance']
             scores.append(distance)
-            if (result['verified']):
-                print("verified smpl %s with %.2f distance" % (path, distance))
+            if idx % 10 == 1:
+                log_stats(scores)
         except:
             scores.append(1)
-    best_score_idx = np.argmin(scores)
-    best_match = scores[best_score_idx]
     toc = time.time()
 
-    landed = np.count_nonzero(np.array(scores) != 1)
-    print("detection rate: %d/%d" % (landed, len(scores)))
-    print("best match: %.2f" % best_match)
+    best_score_idx = log_stats(scores)
     print("total time elapsed: %.2fs" % float(toc - tic))
     print("average time per image: %.2fs" % np.mean(inference_times))
     smpl = smpls[best_score_idx]
-    if write:
-        merged = merge(face, smpl)
-        base_path = f"results/{detector_backend}/{model_name}"
-        fpath = f"{base_path}/json/{face_name.replace('.jpg', '')}.json"
-        write_file(res, path=fpath)
-        cv2.imwrite(f"{base_path}/image/{face_name}.png", merged)
-        print("saved img %s" % face_name)
-    if best_match < 0.4:
-        show_comparison_cv(face, smpl, headless, final=True)
+    merged = merge(face, smpl)
+    base_path = f"results/{detector_backend}/{model_name}"
+    fpath = f"{base_path}/json/{face_name.replace('.jpg', '')}.json"
+    write_file(res, path=fpath)
+    cv2.imwrite(f"{base_path}/image/{face_name}.png", merged)
+    print("saved img %s" % face_name)
+    if not headless:
+        show_comparison_cv(face, smpl, final=True)
