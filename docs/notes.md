@@ -1,5 +1,8 @@
 ### Notes and TODOs (mostly TODOs)
 
+the smpls can have their faces pre-located once the final 7667 is chosen to save time and ensure every one of the smpls faces gets detected
+
+---
 implement an evaluation func
 
 later on this shall be all moved to a class interface to be used along with a server
@@ -18,3 +21,4 @@ also loop could break the loop if there is a good match, good enough to verify
 best score is lowest distance
 
 if its not tensorboard then some other logging/monitoring option has to be used
+
