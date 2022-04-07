@@ -15,6 +15,8 @@ class VGGFace2:
     input_shape = (1, 3, 224, 244)
 
     def __init__(self):
+        # TODO make this run session, but might be irrelevant since using
+        # tensorrt soon anyway
         self.model = onnx.load("models/vggface2.onnx")
         onnx.checker.check_model(self.model)
         print("vggface2 loaded")
