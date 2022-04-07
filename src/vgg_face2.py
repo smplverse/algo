@@ -1,4 +1,4 @@
-import onnx
+import onnxruntime as ort
 import numpy as np
 import cv2
 
@@ -12,17 +12,18 @@ class VGGFace2:
     could be tricky
     """
 
-    input_shape = (1, 3, 224, 244)
-
     def __init__(self):
-        # TODO make this run session, but might be irrelevant since using
-        # tensorrt soon anyway
-        self.model = onnx.load("models/vggface2.onnx")
-        onnx.checker.check_model(self.model)
-        print("vggface2 loaded")
+        self.session = ort.InferenceSession(
+            "models/vggface2.onnx",
+            providers=["CUDAExecutionProvider"],
+        )
+        self.input_shape = self.session.get_inputs()[0].shape
+        print("vggface2 session started")
 
     def __call__(self, img: np.ndarray):
-        return self.postprocess(self.model(self.preprocess(img)))
+        inp = self.preprocess(img)
+        out = self.session.run(["output_1"], {"input_1": inp})
+        return self.postprocess(out)
 
     def preprocess(self, img: np.ndarray) -> np.ndarray:
         """
