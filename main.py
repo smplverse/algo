@@ -7,8 +7,6 @@ from src.data import get_validation_zip
 from typing import Tuple
 from deepface.DeepFace import build_model
 
-from src.benchmark import benchmark
-
 
 def get_backend_and_model() -> Tuple[str, str]:
     url = os.environ.get("CHECKLIST_API_URL")
@@ -44,4 +42,4 @@ def main():
 
 
 if __name__ == "__main__":
-    benchmark()
+    main()
