@@ -39,7 +39,6 @@ class VGGFace2:
         return _img
 
     def feed(self, inp: np.ndarray):
-        # TODO needs layer[-2] outputs for some reason
         out = self.session.run(["output_1"], {"input_1": inp})
         return out
 

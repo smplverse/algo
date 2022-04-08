@@ -5,6 +5,7 @@ import time
 from tqdm import tqdm
 
 from typing import Any
+from distance import Distance
 from deepface import DeepFace
 from src.utils import write_file, merge
 from src.data import get_smpls
@@ -19,15 +20,12 @@ class Matcher:
         face: np.ndarray,
         face_name: str,
         model: Any,
-        model_name: Any,
-        detector_backend: str,
     ):
         self.headless = headless
         self.face = face
         self.face_name = face_name
         self.model = model
-        self.model_name = model_name
-        self.detector_backend = detector_backend
+        self.distance = Distance()
         self.scores = []
         self.res = []
         self.inference_times = []
@@ -46,11 +44,10 @@ class Matcher:
                   np.mean(self.inference_times))
         smpl = self.smpls[best_score_idx]
         merged = merge(self.face, smpl)
-        base_path = f"results/{self.detector_backend}/{self.model_name}"
         just_name = self.face_name.replace('.jpg', '')
-        fpath = f"{base_path}/json/{just_name}.json"
+        fpath = f"results/json/{just_name}.json"
         write_file(self.res, path=fpath)
-        cv2.imwrite(f"{base_path}/image/{just_name}.png", merged)
+        cv2.imwrite(f"results/image/{just_name}.png", merged)
         print("saved img %s" % self.face_name)
         if not self.headless:
             show_comparison_cv(self.face, smpl, final=True)
