@@ -2,7 +2,7 @@ import os
 import argparse
 import requests
 
-from src.match import match
+from src.match import Matcher
 from src.data import get_validation_zip
 from typing import Tuple
 from deepface.DeepFace import build_model
@@ -31,7 +31,7 @@ def main():
     print("built %s to be used with %s" % (model_name, detector_backend))
     for face, face_name in get_validation_zip():
         print('\nrunning for:', face_name)
-        match(
+        matcher = Matcher(
             args.headless,
             detector_backend=detector_backend,
             face=face,
@@ -39,6 +39,7 @@ def main():
             model=model,
             model_name=model_name,
         )
+        matcher.match()
 
 
 if __name__ == "__main__":

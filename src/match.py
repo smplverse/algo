@@ -2,6 +2,8 @@ import cv2
 import numpy as np
 import time
 
+from tqdm import tqdm
+
 from typing import Any
 from deepface import DeepFace
 from src.utils import write_file, merge
@@ -30,9 +32,10 @@ class Matcher:
         self.res = []
         self.inference_times = []
         self.paths, self.smpls = get_smpls("data/smpls")
-        self.smpl_zip = enumerate(zip(self.paths, self.smpls))
+        self.smpls_zip = zip(self.paths, self.smpls)
 
-    def log_stats(self) -> int:
+    def summarize(self):
+        print("total time elapsed: %.2fs" % float(self.toc - self.tic))
         best_score_idx = np.argmin(self.scores)
         best_match = self.scores[best_score_idx]
         landed = np.count_nonzero(np.array(self.scores) != 1)
@@ -41,25 +44,21 @@ class Matcher:
         if len(self.inference_times):
             print("average time per image: %.2fs" %
                   np.mean(self.inference_times))
-        return best_score_idx
-
-    def summarize(self):
-        print("total time elapsed: %.2fs" % float(self.toc - self.tic))
-        best_score_idx = self.log_stats()
         smpl = self.smpls[best_score_idx]
         merged = merge(self.face, smpl)
         base_path = f"results/{self.detector_backend}/{self.model_name}"
-        fpath = f"{base_path}/json/{self.face_name.replace('.jpg', '')}.json"
+        just_name = self.face_name.replace('.jpg', '')
+        fpath = f"{base_path}/json/{just_name}.json"
         write_file(self.res, path=fpath)
-        cv2.imwrite(f"{base_path}/image/{self.face_name}.png", merged)
+        cv2.imwrite(f"{base_path}/image/{just_name}.png", merged)
         print("saved img %s" % self.face_name)
         if not self.headless:
             show_comparison_cv(self.face, smpl, final=True)
 
     def match(self):
         self.tic = time.time()
-        # TODO add tqdm here
-        for idx, [path, smpl] in self.smpls_zip:
+        for _ in tqdm(range(len(self.smpls))):
+            path, smpl = self.smpls_zip.__next__()
             try:
                 inference_tic = time.time()
                 result = DeepFace.verify(
@@ -76,8 +75,6 @@ class Matcher:
                     show_comparison_cv(self.face, smpl)
                 distance = result['distance']
                 self.scores.append(distance)
-                if idx % 10 == 1:
-                    self.log_stats()
             except:
                 self.scores.append(1)
         self.toc = time.time()
