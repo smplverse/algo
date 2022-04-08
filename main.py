@@ -1,6 +1,6 @@
 import argparse
 
-from src.match import Matcher
+from src.matcher import Matcher
 from src.data import get_validation_zip
 from deepface.DeepFace import build_model
 
