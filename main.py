@@ -1,20 +1,8 @@
-import os
 import argparse
-import requests
 
 from src.match import Matcher
 from src.data import get_validation_zip
-from typing import Tuple
 from deepface.DeepFace import build_model
-
-
-def get_backend_and_model() -> Tuple[str, str]:
-    url = os.environ.get("CHECKLIST_API_URL")
-    if not url:
-        url = "http://localhost:8000/"
-    headers = {"Accept": "application/json"}
-    res = requests.get(url, headers=headers).json()
-    return res['backend'], res['model']
 
 
 def main():
