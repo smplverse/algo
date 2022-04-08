@@ -11,9 +11,9 @@ def mock_dir():
     os.removedirs(mock_dir)
 
 
-def test_load_smpls():
-    from src.utils import load_smpls
-    _, smpls = load_smpls("data/smpls")
+def test_get_smpls():
+    from src.data import get_smpls
+    _, smpls = get_smpls("data/smpls")
     assert len(smpls) >= 10
     assert isinstance(smpls[3], np.ndarray)
     assert np.any(smpls[3])
@@ -21,17 +21,17 @@ def test_load_smpls():
 
 
 def test_load_smpls_throws_if_no_smpls(mock_dir):
-    from src.utils import load_smpls
+    from src.data import get_smpls
     with pytest.raises(Exception) as e:
-        load_smpls(mock_dir)
+        get_smpls(mock_dir)
     assert str(e.value) == "no smpls found"
 
 
-def test_is_valid():
-    from src.utils import is_valid
-    assert is_valid("asdfasdf") == False
-    assert is_valid("img.png") == True
-    assert is_valid("img_copy.png") == False
+def test_is_valid_png():
+    from src.utils import is_valid_png
+    assert is_valid_png("asdfasdf") == False
+    assert is_valid_png("img.png") == True
+    assert is_valid_png("img_copy.png") == False
 
 
 def test_write_file():

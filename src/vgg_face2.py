@@ -13,34 +13,35 @@ class VGGFace2:
     """
 
     def __init__(self):
-        self.session = ort.InferenceSession(
-            "models/vggface2.onnx",
-            providers=["CUDAExecutionProvider"],
-        )
+        self.session = ort.InferenceSession("models/vggface2.onnx")
         self.input_shape = self.session.get_inputs()[0].shape
         print("vggface2 session started")
 
     def __call__(self, img: np.ndarray):
         inp = self.preprocess(img)
-        out = self.session.run(["output_1"], {"input_1": inp})
+        out = self.feed(inp)
         return self.postprocess(out)
 
     def preprocess(self, img: np.ndarray) -> np.ndarray:
         """
         :param img: the face to be fed into the vgg model
 
-        this is assuming that the face has been detected, 
+        this is assuming that the face has been detected,
         preprocessing is model specific here and is mostly
         around getting the input size right
         """
         _img = img.copy()
         _img = self.apply_padding(_img)
-        _img /= 255.0
+        _img = np.transpose(_img, (2, 1, 0))
         _img = np.expand_dims(_img, axis=0)
-        # TODO ensure the type is right
-        # some other models also work well
-        # with some more specific normalization than ]0,1[
+        _img = _img / 255
+        _img = _img.astype(np.float32)
         return _img
+
+    def feed(self, inp: np.ndarray):
+        # TODO needs layer[-2] outputs for some reason
+        out = self.session.run(["output_1"], {"input_1": inp})
+        return out
 
     def postprocess(self, out: List):
         [embedding] = out
