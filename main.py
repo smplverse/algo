@@ -15,7 +15,7 @@ def main(headless: bool):
             face_name=face_name,
             model=model,
         )
-        matcher.match()
+        matcher.loop_through_all_smpls()
 
 
 if __name__ == "__main__":

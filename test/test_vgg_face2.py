@@ -3,7 +3,6 @@ import pytest
 import numpy as np
 
 from src.vgg_face2 import VGGFace2
-from deepface import DeepFace
 
 
 @pytest.fixture()
