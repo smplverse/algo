@@ -6,6 +6,7 @@ from hashlib import sha256
 from src.detector import Detector
 from src.distance import Distance
 from src.utils import merge
+from src.vgg_face2 import VGGFace2
 from src.visualization import show_comparison_cv
 from typing import Any
 
@@ -14,8 +15,8 @@ class Matcher:
 
     def __init__(
         self,
-        headless: bool,
-        model: Any,
+        model: Any = VGGFace2(),
+        headless: bool = False,
         session: bool = False,
     ):
         self.headless = headless
@@ -55,13 +56,13 @@ class Matcher:
         face_repr = self.model(face)
         smpl_repr = self.model(smpl_face)
         assert face_repr.shape == smpl_repr.shape
-
         distance = Distance(smpl_repr, face_repr).cosine()
 
         inference_toc = time.time()
         if not self.headless:
-            show_comparison_cv(face, smpl)
+            show_comparison_cv(face, smpl_face)
         if self.session:
             inference_time = float(inference_toc - inference_tic)
             self.inference_times.append(inference_time)
             self.scores.append(distance)
+        return distance

@@ -7,7 +7,7 @@ from src.matcher import Matcher
 
 @pytest.fixture()
 def matcher():
-    matcher = Matcher()
+    matcher = Matcher(headless=True)
     yield matcher
     del matcher.model.session
 
@@ -22,12 +22,11 @@ def face():
     return cv2.imread("data/input/AJ_Cook_0001.jpg")
 
 
-@pytest.mark.skip()
-def test_matching(
+def test_matches(
     matcher: Matcher,
     face: np.ndarray,
     smpl: np.ndarray,
 ):
     result = matcher.match(face, smpl)
-    print(result)
-    assert 0
+    assert isinstance(result, float)
+    assert 0 < result < 1
