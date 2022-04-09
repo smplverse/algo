@@ -44,20 +44,20 @@ class Detector:
             return None
         [det, *_] = results.detections
         bbox = det.location_data.relative_bounding_box
-        landmarks = det.location_data.relative_keypoints
-        _, img_height, img_width = img.shape
+        img_height, img_width, _ = img.shape
         x = int(bbox.xmin * img_width)
         w = int(bbox.width * img_width)
         y = int(bbox.ymin * img_height)
         h = int(bbox.height * img_height)
-        right_eye = np.array([
-            landmarks[0].x * img_width,
-            landmarks[0].y * img_height,
-        ]).astype(int)
-        left_eye = np.array([
-            landmarks[1].x * img_width,
-            landmarks[1].y * img_height,
-        ]).astype(int)
+        # landmarks = det.location_data.relative_keypoints
+        # right_eye = np.array([
+        #     landmarks[0].x * img_width,
+        #     landmarks[0].y * img_height,
+        # ]).astype(int)
+        # left_eye = np.array([
+        #     landmarks[1].x * img_width,
+        #     landmarks[1].y * img_height,
+        # ]).astype(int)
         face = img[y:y + h, x:x + w]
-        face = self.align(face, left_eye, right_eye)
+        # face = self.align(face, left_eye, right_eye)
         return face
