@@ -22,6 +22,7 @@ def face():
     return cv2.imread("data/input/AJ_Cook_0001.jpg")
 
 
+@pytest.mark.skip()
 def test_matching(
     matcher: Matcher,
     face: np.ndarray,
