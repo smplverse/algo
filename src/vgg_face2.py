@@ -44,7 +44,6 @@ class VGGFace2:
 
     def postprocess(self, out: List):
         [[embedding]] = out
-        print(embedding.shape)
         return embedding
 
     def apply_padding(self, img: np.ndarray) -> np.ndarray:

@@ -40,7 +40,7 @@ class Detector:
 
     def detect_face(self, img: np.ndarray) -> Union[np.ndarray, None]:
         results = self.face_detector.process(img)
-        if not len(results.detections):
+        if not results.detections:
             return None
         [det, *_] = results.detections
         bbox = det.location_data.relative_bounding_box

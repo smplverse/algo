@@ -8,7 +8,7 @@ from src.distance import Distance
 from src.utils import merge
 from src.vgg_face2 import VGGFace2
 from src.visualization import show_comparison_cv
-from typing import Any
+from typing import Any, List
 
 
 class Matcher:
@@ -23,24 +23,22 @@ class Matcher:
         self.session = session
         self.model = model
         self.detector = Detector()
+        self.failed_detections = 0
         if self.session:
             self.scores = []
             self.inference_times = []
 
-    def summarize(self):
-        self.best_score_idx = np.argmin(self.scores)
-        best_match = self.scores[self.best_score_idx]
+    def write_results(self, face: np.ndarray, smpls: List[np.ndarray]):
+        best_score_idx = np.argmin(self.scores)
+        best_match = self.scores[best_score_idx]
         landed = np.count_nonzero(np.array(self.scores) != 1)
-        print("\ndetection rate: %.2f" % landed / len(self.scores))
+        det_rate = landed / len(self.scores)
+        smpl = smpls[best_score_idx]
+        print("\ndetection rate: %.2f" % det_rate)
         print("best match: %.2f" % best_match)
         if len(self.inference_times):
             print("average time per image: %.2fs" %
                   np.mean(self.inference_times))
-
-    def write_results(self, face: np.ndarray, smpl: np.ndarray):
-        if not self.best_score_idx:
-            self.summarize()
-        smpl = self.smpls[self.best_score_idx]
         merged = merge(face, smpl)
         fname = sha256().digest()
         cv2.imwrite(f"results/image/{fname}.png", merged)
@@ -52,7 +50,9 @@ class Matcher:
 
         face = self.detector.detect_face(img)
         smpl_face = self.detector.detect_face(smpl)
-
+        if smpl_face is None:
+            self.failed_detections += 1
+            return None
         face_repr = self.model(face)
         smpl_repr = self.model(smpl_face)
         assert face_repr.shape == smpl_repr.shape
