@@ -4,7 +4,6 @@ from typing import Any, List
 
 import cv2
 import numpy as np
-from tqdm import tqdm
 
 from src.detector import Detector
 from src.distance import Distance
@@ -81,17 +80,16 @@ class Matcher:
         face_repr = self.model(face)
         scores = []
         skipped = []
-        for fpath, smpl_repr in tqdm(self.smpls_embeddings.items()):
+        for fpath, smpl_repr in self.smpls_embeddings.items():
             if smpl_repr is None:
                 skipped.append(fpath)
                 continue
             assert face_repr.shape == smpl_repr.shape
             scores.append(Distance(smpl_repr, face_repr).euclidean_l2())
-        print(len(skipped))
         fnames = list(self.smpls_embeddings.keys())
         smpl = cv2.imread(fnames[np.argmin(scores)])
         merged = merge(face, smpl)
-        fname = sha256().digest()
+        fname = sha256(merged).hexdigest()
         cv2.imwrite(f"results/image/{fname}.png", merged)
         if not self.headless:
             show_comparison_cv(img, smpl, final=True)
