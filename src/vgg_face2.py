@@ -13,6 +13,8 @@ class VGGFace2:
         print("vggface2 session started")
 
     def __call__(self, img: np.ndarray):
+        if any(i == 0 for i in img.shape):
+            return np.zeros(512)
         inp = self.preprocess(img)
         out = self.feed(inp)
         return self.postprocess(out)

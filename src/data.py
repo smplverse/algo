@@ -18,6 +18,15 @@ def get_validation_zip():
     return zip(validation_sample, validation_faces)
 
 
+def get_ibug_faces():
+    path = "data/ibug_faces/"
+    fnames = os.listdir(path)
+    ibug_faces = [cv2.imread(path + f) for f in fnames]
+    assert len(ibug_faces)
+    assert isinstance(ibug_faces[0], np.ndarray)
+    return fnames, ibug_faces
+
+
 def get_smpls(base_path: str) -> List[np.ndarray]:
     paths = os.listdir(base_path)
     if len(paths) == 0:

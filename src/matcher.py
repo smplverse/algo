@@ -42,7 +42,7 @@ class Matcher:
             print("average time per image: %.2fs" %
                   np.mean(self.inference_times))
         merged = merge(face, smpl)
-        fname = sha256().digest()
+        fname = sha256(merged).digest()
         cv2.imwrite(f"results/image/{fname}.png", merged)
         if not self.headless:
             show_comparison_cv(face, smpl, final=True)
@@ -74,7 +74,7 @@ class Matcher:
         matches face from image against embeddings of smpls and returns best match
         """
         face = self.detector.detect_face(img)
-        if face is None:
+        if face is None or any(i == 0 for i in face.shape):
             print("could not detect face")
             return
         face_repr = self.model(face)
@@ -88,8 +88,9 @@ class Matcher:
             scores.append(Distance(smpl_repr, face_repr).euclidean_l2())
         fnames = list(self.smpls_embeddings.keys())
         smpl = cv2.imread(fnames[np.argmin(scores)])
+        print(face.shape)
         merged = merge(face, smpl)
         fname = sha256(merged).hexdigest()
-        cv2.imwrite(f"results/image/{fname}.png", merged)
+        cv2.imwrite(f"results/ibug/{fname}.png", merged)
         if not self.headless:
             show_comparison_cv(img, smpl, final=True)
