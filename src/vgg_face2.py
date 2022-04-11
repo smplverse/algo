@@ -6,11 +6,6 @@ from typing import List
 
 
 class VGGFace2:
-    """
-    something peculiar that they are doing in deepface repo is
-    they takey model.layers[-2] output
-    could be tricky
-    """
 
     def __init__(self):
         self.session = ort.InferenceSession("models/vggface2.onnx")

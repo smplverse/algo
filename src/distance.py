@@ -14,10 +14,21 @@ class Distance:
         return 1 - (a / (np.sqrt(b) * np.sqrt(c)))
 
     def euclidean(self) -> float:
-        distance = self.source - self.test
+        return self._euclidean(self.source, self.test)
+
+    def euclidean_l2(self) -> float:
+        source = self._l2_normalize(self.source)
+        test = self._l2_normalize(self.test)
+        return self._euclidean(source, test)
+
+    @staticmethod
+    def _euclidean(source: np.ndarray, test: np.ndarray) -> float:
+        distance = source - test
         distance = np.sum(np.multiply(distance, distance))
         distance = np.sqrt(distance)
         return distance
 
-    def l2_normalize(x):
-        return x / np.sqrt(np.sum(np.multiply(x, x)))
+    @staticmethod
+    def _l2_normalize(x: np.ndarray):
+        _x = x.copy()
+        return _x / np.sqrt(np.sum(np.multiply(_x, _x)))
