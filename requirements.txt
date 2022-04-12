@@ -1,11 +1,6 @@
-deepface
 opencv-python
-pycuda
 numpy
-onnx
-nvidia-pyindex
-requests
-dlib
+onnxruntime-gpu
 model_profiler
 
 # dev deps

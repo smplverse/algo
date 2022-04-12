@@ -1,3 +1,4 @@
+import numpy as np
 """
 # below to not relevant for now
 import pytest
@@ -24,12 +25,32 @@ def test_pycuda_works():
 
     diff = (a_g * b_g).get() - a * b
     assert la.norm(diff) == 0
-"""
 
 
 def test_tensorflow_works_with_gpu():
     import tensorflow as tf
     assert tf.test.is_gpu_available()
+"""
+
+
+def test_onnxruntime_works_with_cuda():
+    import onnxruntime as ort
+    providers = [
+        'CUDAExecutionProvider', {
+            'device_id': 0,
+            'arena_extend_strategy': 'kNextPowerOfTwo',
+            'gpu_mem_limit': 2 * 1024 * 1024 * 1024,
+            'cudnn_conv_algo_search': 'EXHAUSTIVE',
+            'do_copy_in_default_stream': True,
+        }
+    ]
+    session = ort.InferenceSession(
+        "models/vggface2.onnx",
+        providers=providers,
+    )
+    inp = np.random.rand(1, 3, 224, 224).astype(np.float32)
+    [out] = session.run(None, {"input_1": inp})
+    assert out.shape == (1, 512)
 
 
 def test_opencv_works():
