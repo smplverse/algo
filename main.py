@@ -4,6 +4,7 @@ from tqdm import tqdm
 
 from src.data import get_famous_people_zip, get_ibug_zip
 from src.matcher import Matcher
+from src.make_smpls_embeddings import make_smpls_embeddings
 
 
 def main_famous_people(headless: bool, model: str):
@@ -29,7 +30,11 @@ if __name__ == "__main__":
     parser.add_argument("--headless", action="store_true")
     parser.add_argument("--model", type=str, default="resnet100")
     parser.add_argument("--dataset", type=str, default="ibug_faces")
+    parser.add_argument("--make-embeddings", action="store_true")
     args = parser.parse_args()
+
+    if args.make_embeddings:
+        make_smpls_embeddings(args.model)
 
     if args.dataset == "famous_people":
         main_famous_people(args.headless, args.model)

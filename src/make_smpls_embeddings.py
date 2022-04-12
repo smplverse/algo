@@ -5,10 +5,10 @@ from src.data import get_smpls
 from src.utils import serialize
 
 
-def make_smpls_embeddings(model_path: str):
+def make_smpls_embeddings(model: str):
     paths, smpls = get_smpls("data/smpls")
     _zip = zip(paths, smpls)
-    vgg = OnnxModel(model_path)
+    vgg = OnnxModel("models/%s.onnx" % model)
     fd = Detector()
     embeddings = {}
     for _ in tqdm(range(len(smpls))):
@@ -19,5 +19,4 @@ def make_smpls_embeddings(model_path: str):
             continue
         embedding = vgg(smpl)
         embeddings[path] = embedding
-    model_name = model_path.split("/")[-1].split(".")[0]
-    serialize(embeddings), f"data/embeddings_{model_name}.p")
+    serialize(embeddings, "data/embeddings_%s.p" % model)
