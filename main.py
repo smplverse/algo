@@ -2,28 +2,26 @@ import argparse
 
 from tqdm import tqdm
 
-from src.data import get_validation_zip, get_ibug_faces
+from src.data import get_famous_people_zip, get_ibug_zip
 from src.matcher import Matcher
-from src.onnx_model import OnnxModel
 
 
 def main_famous_people(headless: bool):
-    model = OnnxModel()
-    validation_zip = get_validation_zip()
-    for face, face_name in (pbar := tqdm(list(validation_zip))):
+    matcher = Matcher(headless=headless)
+    famous_people_zip = get_famous_people_zip()
+    for face, face_name in (pbar := tqdm(list(famous_people_zip))):
         pbar.set_description_str('running for: %s' % face_name)
-        matcher = Matcher(model=model, headless=headless)
         matcher.match(face)
+        matcher.clear()
 
 
 def main_ibug_faces(headless: bool):
-    model = OnnxModel()
-    names, faces = get_ibug_faces()
-    ibug_zip = zip(names, faces)
+    matcher = Matcher(headless=headless)
+    ibug_zip = get_ibug_zip()
     for name, face in (pbar := tqdm(list(ibug_zip))):
         pbar.set_description_str('running for: %s' % name)
-        matcher = Matcher(model=model, headless=headless)
         matcher.match(face)
+        matcher.clear()
 
 
 if __name__ == "__main__":
@@ -31,4 +29,6 @@ if __name__ == "__main__":
     parser.add_argument("--headless", action="store_true")
     args = parser.parse_args()
 
-    main_ibug_faces(args.headless)
+    # main_ibug_faces(args.headless)
+    from src.make_smpls_embeddings import make_smpls_embeddings
+    make_smpls_embeddings()

@@ -3,19 +3,23 @@ import cv2
 import numpy as np
 import os
 
-from random import shuffle
 from typing import List, Tuple
 from src.utils import is_valid_png
 
 
-def get_validation_zip():
-    with open("validation_sample.txt", "r+") as f:
-        validation_faces = f.read().split("\n")
-    shuffle(validation_faces)
-    validation_sample = ["data/input/" + face for face in validation_faces]
-    validation_sample = [cv2.imread(path) for path in validation_sample]
-    assert len(validation_sample) == len(validation_faces) == 100
-    return zip(validation_sample, validation_faces)
+def get_famous_people():
+    path = "data/famous_people/"
+    fnames = os.listdir(path)
+    famous_people = [cv2.imread(path + f) for f in fnames]
+    assert len(famous_people)
+    assert isinstance(famous_people[0], np.ndarray)
+    return fnames, famous_people
+
+
+def get_famous_people_zip():
+    names, faces = get_famous_people()
+    famous_people_zip = zip(names, faces)
+    return famous_people_zip
 
 
 def get_ibug_faces():
@@ -45,3 +49,9 @@ def get_face() -> Tuple[np.ndarray, str]:
     face = cv2.imread(path)
     face_name = face_name.replace(".jpg", "")
     return face, face_name
+
+
+def get_ibug_zip():
+    names, faces = get_ibug_faces()
+    ibug_zip = zip(names, faces)
+    return ibug_zip
