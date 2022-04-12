@@ -1,5 +1,5 @@
 from tqdm import tqdm
-from src.vgg_face2 import VGGFace2
+from src.onnx_model import OnnxModel
 from src.detector import Detector
 from src.data import get_smpls
 from src.utils import serialize
@@ -8,7 +8,7 @@ from src.utils import serialize
 def make_smpls_embeddings():
     paths, smpls = get_smpls("data/smpls")
     _zip = zip(paths, smpls)
-    vgg = VGGFace2()
+    vgg = OnnxModel()
     fd = Detector()
     embeddings = {}
     for _ in tqdm(range(len(smpls))):

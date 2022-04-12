@@ -1,6 +1,5 @@
 import pytest
 import cv2
-import matplotlib.pyplot as plt
 
 from src.detector import Detector
 
@@ -12,6 +11,6 @@ def detector():
 
 
 def test_detector_detects(detector):
-    img = cv2.imread("data/input/AJ_Cook_0001.jpg")
+    img = cv2.imread("data/famous_people/AJ_Cook_0001.jpg")
     face = detector.detect_face(img)
     assert face is not None

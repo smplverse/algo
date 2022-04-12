@@ -8,7 +8,7 @@ import numpy as np
 from src.detector import Detector
 from src.distance import Distance
 from src.utils import deserialize, merge
-from src.vgg_face2 import VGGFace2
+from src.onnx_model import OnnxModel
 from src.visualization import show_comparison_cv
 
 
@@ -16,7 +16,7 @@ class Matcher:
 
     def __init__(
         self,
-        model: Any = VGGFace2(),
+        model: Any = OnnxModel(),
         headless: bool = False,
         session: bool = False,
     ):

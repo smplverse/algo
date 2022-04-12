@@ -34,5 +34,5 @@ def test_tensorflow_works_with_gpu():
 
 def test_opencv_works():
     import cv2
-    img = cv2.imread("data/input/AJ_Cook_0001.jpg")
+    img = cv2.imread("data/smpls/000008.png")
     assert len(img.shape) == 3

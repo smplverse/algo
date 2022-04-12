@@ -19,14 +19,14 @@ def smpl():
 
 @pytest.fixture()
 def face():
-    return cv2.imread("data/input/AJ_Cook_0001.jpg")
+    return cv2.imread("data/famous_people/AJ_Cook_0001.jpg")
 
 
-def test_matches(
+def test_matches_images(
     matcher: Matcher,
     face: np.ndarray,
     smpl: np.ndarray,
 ):
-    result = matcher.match(face, smpl)
+    result = matcher.match_images(face, smpl)
     assert isinstance(result, float)
     assert 0 < result < 1

@@ -5,12 +5,17 @@ import cv2
 from typing import List
 
 
-class VGGFace2:
+class OnnxModel:
 
-    def __init__(self):
-        self.session = ort.InferenceSession("models/vggface2.onnx")
+    session: ort.InferenceSession
+    output_shape: List[int]
+    input_shape: List[int]
+
+    def __init__(self, path: str = "models/vggface2.onnx"):
+        self.session = ort.InferenceSession(path)
         self.input_shape = self.session.get_inputs()[0].shape
-        print("vggface2 session started")
+        self.output_shape = self.session.get_outputs()[0].shape
+        print("%s session started" % path)
 
     def __call__(self, img: np.ndarray):
         if any(i == 0 for i in img.shape):
