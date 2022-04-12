@@ -1,9 +1,8 @@
-import numpy as np
-
 from tqdm import tqdm
 from src.onnx_model import OnnxModel
 from src.detector import Detector
 from src.data import get_smpls
+from src.utils import serialize
 
 
 def make_smpls_embeddings(model_path: str):
@@ -21,4 +20,4 @@ def make_smpls_embeddings(model_path: str):
         embedding = vgg(smpl)
         embeddings[path] = embedding
     model_name = model_path.split("/")[-1].split(".")[0]
-    np.save(f"data/embeddings_{model_name}.npy", embeddings)
+    serialize(embeddings), f"data/embeddings_{model_name}.p")

@@ -7,7 +7,7 @@ import numpy as np
 
 from src.detector import Detector
 from src.distance import Distance
-from src.utils import merge
+from src.utils import merge, deserialize
 from src.onnx_model import OnnxModel
 from src.visualization import show_comparison_cv
 
@@ -27,8 +27,8 @@ class Matcher:
         self.model = OnnxModel(path="models/%s.onnx" % model)
         self.detector = Detector()
         self.failed_detections = 0
-        embeddings_path: str = "embeddings/embeddings_%s.npy" % model
-        self.smpls_embeddings = np.load(embeddings_path, allow_pickle=True)
+        embeddings_path: str = "embeddings/embeddings_%s.p" % model
+        self.smpls_embeddings = deserialize(embeddings_path)
         print(self.smpls_embeddings)
         self.fnames = list(self.smpls_embeddings.keys())
 
@@ -72,7 +72,7 @@ class Matcher:
 
     def match(self, img: np.ndarray):
         """
-        matches face from image against embeddings of smpls 
+        matches face from image against embeddings of smpls
         """
         face = self.detector.detect_face(img)
         if face is None or any(i == 0 for i in face.shape):

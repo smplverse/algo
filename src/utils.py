@@ -1,5 +1,8 @@
+import pickle
 import numpy as np
 import cv2
+
+from typing import Any
 
 
 def is_valid_png(path: str):
@@ -25,3 +28,14 @@ def merge(face: np.ndarray, smpl: np.ndarray) -> np.ndarray:
         face = cv2.resize(face, dsize=(w, h))
     merged = np.concatenate((face, smpl), axis=1)
     return merged
+
+
+def serialize(obj: Any, fpath: str):
+    with open(fpath, "wb") as f:
+        pickle.dump(obj, f)
+
+
+def deserialize(fpath: str) -> Any:
+    with open(fpath, "rb") as f:
+        obj = pickle.load(f)
+    return obj
