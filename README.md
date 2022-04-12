@@ -9,9 +9,9 @@
 
 ### Contents:
 
-- [ Algorithm ](https://github.com/piotrostr/smplverse/tree/master/docs/algorithm.md)
-- [ Models ](https://github.com/piotrostr/smplverse/tree/master/docs/models.md)
-- [ Workflow ](https://github.com/piotrostr/smplverse/tree/master/docs/workflow.md)
-- [ Tech Stack ](https://github.com/piotrostr/smplverse/tree/master/docs/tech-stack.md)
-- [ Stack ](https://github.com/piotrostr/smplverse/tree/master/docs/tech-stack.md)
-- [ Notes ](https://github.com/piotrostr/smplverse/tree/master/docs/notes.md)
+- [ Algorithm ](https://github.com/piotrostr/smplverse/tree/main/docs/algorithm.md)
+- [ Models ](https://github.com/piotrostr/smplverse/tree/main/docs/models.md)
+- [ Workflow ](https://github.com/piotrostr/smplverse/tree/main/docs/workflow.md)
+- [ Tech Stack ](https://github.com/piotrostr/smplverse/tree/main/docs/tech-stack.md)
+- [ Stack ](https://github.com/piotrostr/smplverse/tree/main/docs/tech-stack.md)
+- [ Notes ](https://github.com/piotrostr/smplverse/tree/main/docs/notes.md)
