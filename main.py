@@ -26,11 +26,30 @@ def main_ibug_faces(headless: bool, model: str):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--headless", action="store_true")
-    parser.add_argument("--model", type=str, default="resnet100")
-    parser.add_argument("--dataset", type=str, default="ibug_faces")
-    parser.add_argument("--make-embeddings", action="store_true")
+    dsc = "Runs the matcher on chosen dataset against smplverse pieces"
+    parser = argparse.ArgumentParser(description=dsc)
+    parser.add_argument(
+        "--headless",
+        action="store_true",
+        help="include flag to skip displaying the images",
+    )
+    parser.add_argument(
+        "--model",
+        type=str,
+        default="resnet100",
+        help="the model to use, either resnet100 or vggface2",
+    )
+    parser.add_argument(
+        "--dataset",
+        type=str,
+        default="ibug_faces",
+        help="ibug_faces or famous_people",
+    )
+    parser.add_argument(
+        "--make-embeddings",
+        action="store_true",
+        help="include to create embeddings with the given model",
+    )
     args = parser.parse_args()
 
     if args.make_embeddings:

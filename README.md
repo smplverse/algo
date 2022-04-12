@@ -13,3 +13,19 @@
 - [ Tech Stack ](https://github.com/piotrostr/smplverse/tree/main/docs/tech-stack.md)
 - [ Stack ](https://github.com/piotrostr/smplverse/tree/main/docs/tech-stack.md)
 - [ Notes ](https://github.com/piotrostr/smplverse/tree/main/docs/notes.md)
+
+### Usage:
+
+```
+main.py [-h] [--headless] [--model MODEL] [--dataset DATASET]
+        [--make-embeddings]
+
+Runs the matcher on chosen dataset against smplverse pieces
+
+optional arguments:
+  -h, --help         show this help message and exit
+  --headless         include flag to skip displaying the images
+  --model MODEL      the model to use, either resnet100 or vggface2
+  --dataset DATASET  ibug_faces or famous_people
+  --make-embeddings  include to create embeddings with the given model
+```
