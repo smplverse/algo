@@ -11,6 +11,10 @@ metadata:
 - json img uri, take the token index, confidence (distance)
 - describe the smpls with 3-5 words using some other model
 
+  https://3wordsproject.com/metadata/270.json
+  https://etherscan.io/address/0xa8f9b843c449c5d93a58400f8586599b8f336dbb#code
+  https://etherscan.io/address/0x517e643f53eb3622fd2c3a12c6bfde5e7bc8d5ca#code
+
 storage
 
 - s3

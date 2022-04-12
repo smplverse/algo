@@ -2,6 +2,8 @@ opencv-python
 numpy
 onnxruntime-gpu
 model_profiler
+deepface
+mediapipe
 
 # dev deps
 pytest
