@@ -29,7 +29,6 @@ class Matcher:
         self.failed_detections = 0
         embeddings_path: str = "embeddings/embeddings_%s.p" % model
         self.smpls_embeddings = deserialize(embeddings_path)
-        print(self.smpls_embeddings)
         self.fnames = list(self.smpls_embeddings.keys())
 
     def write_results(self, face: np.ndarray):
@@ -90,7 +89,7 @@ class Matcher:
         smpl = cv2.imread(self.fnames[np.argmin(scores)])
         merged = merge(face, smpl)
         fname = sha256(merged).hexdigest()
-        cv2.imwrite(f"results/ibug/{fname}.png", merged)
+        cv2.imwrite(f"results/image/{fname}.png", merged)
         if not self.headless:
             show_comparison_cv(img, smpl, final=True)
 

@@ -37,7 +37,7 @@ class OnnxModel:
         print("%s session started" % path)
 
     def __call__(self, img: np.ndarray):
-        if any(i == 0 for i in img.shape):
+        if any(i <= 1 for i in img.shape):
             return np.zeros(512)
         inp = self.preprocess(img)
         out = self.feed(inp)

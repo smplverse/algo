@@ -10,8 +10,8 @@ from src.make_smpls_embeddings import make_smpls_embeddings
 def main_famous_people(headless: bool, model: str):
     matcher = Matcher(headless=headless, model=model)
     famous_people_zip = get_famous_people_zip()
-    for face, face_name in (pbar := tqdm(list(famous_people_zip))):
-        pbar.set_description_str('running for: %s' % face_name)
+    for name, face in (pbar := tqdm(list(famous_people_zip))):
+        pbar.set_description_str('running for: %s' % name)
         matcher.match(face)
         matcher.clear()
 

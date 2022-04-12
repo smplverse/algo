@@ -19,4 +19,4 @@ def make_smpls_embeddings(model: str):
             continue
         embedding = vgg(smpl)
         embeddings[path] = embedding
-    serialize(embeddings, "data/embeddings_%s.p" % model)
+    serialize(embeddings, "embeddings/embeddings_%s.p" % model)
