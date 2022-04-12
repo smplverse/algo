@@ -6,8 +6,8 @@ from src.data import get_famous_people_zip, get_ibug_zip
 from src.matcher import Matcher
 
 
-def main_famous_people(headless: bool):
-    matcher = Matcher(headless=headless)
+def main_famous_people(headless: bool, model: str):
+    matcher = Matcher(headless=headless, model=model)
     famous_people_zip = get_famous_people_zip()
     for face, face_name in (pbar := tqdm(list(famous_people_zip))):
         pbar.set_description_str('running for: %s' % face_name)
@@ -15,8 +15,8 @@ def main_famous_people(headless: bool):
         matcher.clear()
 
 
-def main_ibug_faces(headless: bool):
-    matcher = Matcher(headless=headless)
+def main_ibug_faces(headless: bool, model: str):
+    matcher = Matcher(headless=headless, model=model)
     ibug_zip = get_ibug_zip()
     for name, face in (pbar := tqdm(list(ibug_zip))):
         pbar.set_description_str('running for: %s' % name)
@@ -27,8 +27,13 @@ def main_ibug_faces(headless: bool):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--headless", action="store_true")
+    parser.add_argument("--model", type=str, default="resnet100")
+    parser.add_argument("--dataset", type=str, default="ibug_faces")
     args = parser.parse_args()
 
-    # main_ibug_faces(args.headless)
-    from src.make_smpls_embeddings import make_smpls_embeddings
-    make_smpls_embeddings()
+    if args.dataset == "famous_people":
+        main_famous_people(args.headless, args.model)
+    elif args.dataset == "ibug_faces":
+        main_ibug_faces(args.headless, args.model)
+    else:
+        raise ValueError("Unknown dataset: %s" % args.dataset)

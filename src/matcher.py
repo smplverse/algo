@@ -21,14 +21,15 @@ class Matcher:
     fnames: List[str]
     scores: List[float] = []
     inference_times: List[float] = []
-    embeddings_path: str = "data/embeddings_vggface2.npy"
 
-    def __init__(self, headless: bool = False):
+    def __init__(self, headless: bool, model: str):
         self.headless = headless
-        self.model = OnnxModel()
+        self.model = OnnxModel(path="models/%s.onnx" % model)
         self.detector = Detector()
         self.failed_detections = 0
-        self.smpls_embeddings = np.load(self.embeddings_path)
+        embeddings_path: str = "embeddings/embeddings_%s.npy" % model
+        self.smpls_embeddings = np.load(embeddings_path, allow_pickle=True)
+        print(self.smpls_embeddings)
         self.fnames = list(self.smpls_embeddings.keys())
 
     def write_results(self, face: np.ndarray):

@@ -1,9 +1,11 @@
 import os
+import os
+from typing import List, Tuple
+
 import cv2
 import numpy as np
-import os
+from tqdm import tqdm
 
-from typing import List, Tuple
 from src.utils import is_valid_png
 
 
@@ -37,7 +39,11 @@ def get_smpls(base_path: str) -> List[np.ndarray]:
         raise Exception("no smpls found")
     paths = [path for path in paths if is_valid_png(path)]
     paths = [base_path + "/" + path for path in paths]
-    smpls = [cv2.imread(path) for path in paths]
+    print("loading smpls..")
+    smpls = []
+    for path in tqdm(paths):
+        smpl = cv2.imread(path)
+        smpls.append(smpl)
     return paths, smpls
 
 
