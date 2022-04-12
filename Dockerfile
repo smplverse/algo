@@ -1,11 +1,11 @@
-FROM nvcr.io/nvidia/tensorflow:22.03-tf2-py3 as base
+FROM nvcr.io/nvidia/cuda:11.6.1-cudnn8-devel-ubi8 as base
 
-# install opencv
-RUN apt update 
-RUN apt install -y cmake g++ wget unzip libgl1-mesa-glx
-RUN wget -O opencv.zip https://github.com/opencv/opencv/archive/refs/tags/4.5.5.zip
-RUN unzip opencv.zip && rm opencv.zip
-RUN mkdir -p build && cd build && cmake ../opencv-4.5.5 && cmake --build . -- -j 8
+RUN wget --quiet \
+  https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
+  -O ~/miniconda.sh \
+  && /bin/bash ~/miniconda.sh -b -p /opt/conda
+
+RUN conda install -y -c conda-forge opencv
 
 FROM base as main
 COPY requirements.txt requirements.txt

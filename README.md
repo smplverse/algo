@@ -8,8 +8,9 @@
 <br />
 
 ### Contents:
+
 - [ Algorithm ](https://github.com/piotrostr/smplverse/tree/master/docs/algorithm.md)
-- [ Benchmark ](https://github.com/piotrostr/smplverse/tree/master/benchmark.txt)
+- [ Models ](https://github.com/piotrostr/smplverse/tree/master/docs/models.md)
 - [ Workflow ](https://github.com/piotrostr/smplverse/tree/master/docs/workflow.md)
 - [ Tech Stack ](https://github.com/piotrostr/smplverse/tree/master/docs/tech-stack.md)
 - [ Stack ](https://github.com/piotrostr/smplverse/tree/master/docs/tech-stack.md)
