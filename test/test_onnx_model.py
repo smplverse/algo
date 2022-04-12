@@ -27,3 +27,10 @@ def test_preprocess_works(model: OnnxModel, img: np.ndarray):
 def test_call_works(model: OnnxModel, img: np.ndarray):
     out = model(img)
     assert out.shape == (512, )
+
+
+def test_resnet100_works():
+    model = OnnxModel("models/resnet100.onnx")
+    img = cv2.imread("data/ibug_faces/indoor_001.png")
+    out = model(img)
+    assert out.shape == (512, )

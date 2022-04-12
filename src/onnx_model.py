@@ -10,11 +10,30 @@ class OnnxModel:
     session: ort.InferenceSession
     output_shape: List[int]
     input_shape: List[int]
+    input_name: str
+    providers = [
+        ('CUDAExecutionProvider', {
+            'device_id': 0,
+            'arena_extend_strategy': 'kNextPowerOfTwo',
+            'gpu_mem_limit': 2 * 1024 * 1024 * 1024,
+            'cudnn_conv_algo_search': 'EXHAUSTIVE',
+            'do_copy_in_default_stream': True,
+        }),
+        ('CPUExecutionProvider', {
+            'use_arena': True,
+            'arena_extend_strategy': 'kNextPowerOfTwo',
+            'cpu_fast_math_mode': True,
+        }),
+    ]
 
     def __init__(self, path: str = "models/vggface2.onnx"):
-        self.session = ort.InferenceSession(path)
+        self.session = ort.InferenceSession(path, providers=self.providers)
         self.input_shape = self.session.get_inputs()[0].shape
         self.output_shape = self.session.get_outputs()[0].shape
+        if "vgg" in path:
+            self.input_name = "input_1"
+        else:
+            self.input_name = "input.1"
         print("%s session started" % path)
 
     def __call__(self, img: np.ndarray):
@@ -41,7 +60,7 @@ class OnnxModel:
         return _img
 
     def feed(self, inp: np.ndarray):
-        out = self.session.run(["output_1"], {"input_1": inp})
+        out = self.session.run(None, {self.input_name: inp})
         return out
 
     def postprocess(self, out: List):
