@@ -12,7 +12,6 @@
 - [ Workflow ](https://github.com/piotrostr/smplverse/tree/main/docs/workflow.md)
 - [ Tech Stack ](https://github.com/piotrostr/smplverse/tree/main/docs/tech-stack.md)
 - [ Stack ](https://github.com/piotrostr/smplverse/tree/main/docs/tech-stack.md)
-- [ Notes ](https://github.com/piotrostr/smplverse/tree/main/docs/notes.md)
 
 ### Usage:
 
