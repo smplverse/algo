@@ -5,6 +5,7 @@ from tqdm import tqdm
 from src.data import get_famous_people_zip, get_ibug_zip
 from src.matcher import Matcher
 from src.make_smpls_embeddings import make_smpls_embeddings
+from src.generate_image_hash import generate_image_hash
 
 
 def main_famous_people(headless: bool, model: str):
@@ -29,6 +30,13 @@ if __name__ == "__main__":
     dsc = "Runs the matcher on chosen dataset against smplverse pieces"
     parser = argparse.ArgumentParser(description=dsc)
     parser.add_argument(
+        "--generate-hash",
+        action="store_true",
+        help="Generate hash for all faces in dataset",
+    )
+    parser.add_argument('--collection-size', type=int, required=True)
+    parser.add_argument('--a', type=int, default=256)
+    parser.add_argument(
         "--headless",
         action="store_true",
         help="include flag to skip displaying the images",
@@ -51,6 +59,10 @@ if __name__ == "__main__":
         help="include to create embeddings with the given model",
     )
     args = parser.parse_args()
+
+    if args.generate_hash:
+        generate_image_hash(args.collection_size, args.a)
+        exit()
 
     if args.make_embeddings:
         make_smpls_embeddings(args.model)
