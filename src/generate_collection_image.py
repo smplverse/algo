@@ -1,6 +1,5 @@
 import argparse
 import glob
-from hashlib import sha256
 
 import os
 import cv2
@@ -9,7 +8,7 @@ from tqdm import tqdm
 from src.utils import deserialize, serialize
 
 
-def generate_image_hash(collection_size: int, a: int, force=False):
+def generate_collection_image(collection_size: int, a: int, force=False):
     ncols = np.ceil(np.sqrt(collection_size)).astype(int)
     print(ncols)
     images = []
@@ -57,17 +56,6 @@ def generate_image_hash(collection_size: int, a: int, force=False):
     img = np.vstack(rows)
 
     # save results
-    print(img.shape)
+    print("written image of shape", img.shape)
     cv2.imwrite('collection_image.png', img)
     img = cv2.imread('collection_image.png', -1)
-    img_hash = sha256(img).hexdigest()
-    print(f'img hash: {img_hash}')
-
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--collection-size', type=int, required=True)
-    parser.add_argument('--a', type=int, default=256)
-    args = parser.parse_args()
-
-    generate_image_hash(args.collection_size, args.a)
