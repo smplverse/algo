@@ -9,12 +9,13 @@ from tqdm import tqdm
 from src.utils import deserialize, serialize
 
 
-def generate_image_hash(collection_size: int, a: int):
+def generate_image_hash(collection_size: int, a: int, force=False):
     ncols = np.ceil(np.sqrt(collection_size)).astype(int)
+    print(ncols)
     images = []
     print("loading images...")
     got_pickled = "smpls.p" in os.listdir("data")
-    if got_pickled:
+    if got_pickled and not force:
         print("loading pickled images...")
         images = deserialize("data/smpls.p")
     else:
@@ -35,16 +36,25 @@ def generate_image_hash(collection_size: int, a: int):
     for _ in tqdm(range(len(images) // ncols)):
         # concatenate rows in the top till have enough images to fill up row
         new_row = np.concatenate(images[:ncols], axis=1)
+        images = images[ncols:]
         rows.append(new_row)
 
     # apply filler once there is no more images yet row has to be filled up
-    filler = np.zeros((a, (ncols - len(images)) * a, c))
-    last_row = np.concatenate(images, axis=1)
-    last_row = np.concatenate((last_row, filler), axis=1)
+    remaining_images_to_fill = ncols - len(images)
+    fillers = [
+        np.zeros((a, a, c), dtype=np.uint8)
+        for _ in range(remaining_images_to_fill)
+    ]
+    images += fillers
+    assert len(images) == ncols
+    last_row = np.concatenate(
+        images,
+        axis=1,
+    )
     rows.append(last_row)
 
     # merge
-    img = np.concatenate(rows, axis=1)
+    img = np.vstack(rows)
 
     # save results
     print(img.shape)

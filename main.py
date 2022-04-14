@@ -35,7 +35,7 @@ if __name__ == "__main__":
         help="Generate hash for all faces in dataset",
     )
     parser.add_argument('--collection-size', type=int, required=True)
-    parser.add_argument('--a', type=int, default=256)
+    parser.add_argument('--a', type=int, default=128)
     parser.add_argument(
         "--headless",
         action="store_true",
