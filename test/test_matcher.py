@@ -7,7 +7,7 @@ from src.matcher import Matcher
 
 @pytest.fixture()
 def matcher():
-    matcher = Matcher(headless=True)
+    matcher = Matcher(headless=True, model="resnet100")
     yield matcher
     del matcher.model.session
 
