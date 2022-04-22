@@ -5,6 +5,40 @@
 </div>
 <br />
 
+### frontend:
+
+- address bob
+- bob has a mint token
+- bob approves an image
+- bob sends tx [userImagehash, tokenId]
+- if tx reverts - alert exception, otherwise continue by sending below to server
+- allow the user to download their image upload?
+
+```
+HTTP/1.1 POST
+{
+  address: bob.address,
+  tx: txReceiptHash,
+  tokenId: tokenId,
+  uploadedImage: base64(img)
+}
+```
+
+### server:
+
+- stores the smpls representations
+- retrieve the tx details
+- save the uploaded image only till the smpl is assigned
+- assert that:
+  - postRequest.uploadedImageHash == tx.uploadedImageHash
+  - postRequest.tokenId == tx.tokenId
+  - !postRequest.tokenId doesnt have a smpl assigned
+- perform match
+- assign smplId to tokenId in our mapping
+- make smpl public under given tokenId (metadata api)
+
+the user can now see their smpl on opensea/metamask, and the contract is storing the hash of an image sent
+
 ### Contents:
 
 - [ Algorithm ](https://github.com/piotrostr/smplverse/tree/main/docs/algorithm.md)
@@ -36,3 +70,5 @@ try the model here:
 
 and buffalo from here:
 [ Insightface ](https://github.com/deepinsight/insightface/blob/master/model_zoo/README.md#1-face-recognition-models)
+
+ensure minting works on mobile also
