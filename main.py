@@ -35,7 +35,7 @@ if __name__ == "__main__":
         action="store_true",
         help="Generate hash for all faces in dataset",
     )
-    parser.add_argument('--collection-size', type=int, required=True)
+    parser.add_argument('--collection-size', type=int)
     parser.add_argument('--a', type=int, default=128)
 
     parser.add_argument(
@@ -64,12 +64,13 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    if args.generate_hash:
+    if args.generate_collection_image:
         generate_collection_image(args.collection_size, args.a)
         exit()
 
     if args.make_embeddings:
         make_smpls_embeddings(args.model)
+        exit()
 
     if args.dataset == "famous_people":
         main_famous_people(args.headless, args.model)

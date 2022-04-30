@@ -1,4 +1,3 @@
-import argparse
 import glob
 
 import os
@@ -10,7 +9,6 @@ from src.utils import deserialize, serialize
 
 def generate_collection_image(collection_size: int, a: int, force=False):
     ncols = np.ceil(np.sqrt(collection_size)).astype(int)
-    print(ncols)
     images = []
     print("loading images...")
     got_pickled = "smpls.p" in os.listdir("data")
