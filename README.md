@@ -5,7 +5,7 @@
 </div>
 <br />
 
-### frontend:
+### frontend
 
 - address bob
 - bob has a mint token
@@ -17,14 +17,13 @@
 ```
 HTTP/1.1 POST
 {
-  address: bob.address,
-  tx: txReceiptHash,
-  tokenId: tokenId,
-  uploadedImage: base64(img)
+  address
+  tokenId
+  image
 }
 ```
 
-### server:
+### server
 
 - stores the smpls representations
 - retrieve the tx details
@@ -37,17 +36,18 @@ HTTP/1.1 POST
 - assign smplId to tokenId in our mapping
 - make smpl public under given tokenId (metadata api)
 
-the user can now see their smpl on opensea/metamask, and the contract is storing the hash of an image sent
+the user can now see their smpl on opensea/metamask, and the contract is
+storing the hash of an image sent
 
-### Contents:
+### Contents
 
-- [ Algorithm ](https://github.com/piotrostr/smplverse/tree/main/docs/algorithm.md)
-- [ Models ](https://github.com/piotrostr/smplverse/tree/main/docs/models.md)
-- [ Workflow ](https://github.com/piotrostr/smplverse/tree/main/docs/workflow.md)
-- [ Tech Stack ](https://github.com/piotrostr/smplverse/tree/main/docs/tech-stack.md)
-- [ Stack ](https://github.com/piotrostr/smplverse/tree/main/docs/tech-stack.md)
+- [Algorithm](https://github.com/piotrostr/smplverse/tree/main/docs/algorithm.md)
+- [Models](https://github.com/piotrostr/smplverse/tree/main/docs/models.md)
+- [Workflow](https://github.com/piotrostr/smplverse/tree/main/docs/workflow.md)
+- [Tech Stack](https://github.com/piotrostr/smplverse/tree/main/docs/tech-stack.md)
+- [Stack](https://github.com/piotrostr/smplverse/tree/main/docs/tech-stack.md)
 
-### Usage:
+### Usage
 
 ```
 main.py [-h] [--headless] [--model MODEL] [--dataset DATASET]
@@ -66,9 +66,9 @@ optional arguments:
 ### TODO
 
 try the model here:
-[ MagFace ](https://github.com/IrvingMeng/MagFace)
+[MagFace](https://github.com/IrvingMeng/MagFace)
 
 and buffalo from here:
-[ Insightface ](https://github.com/deepinsight/insightface/blob/master/model_zoo/README.md#1-face-recognition-models)
+[Insightface](https://github.com/deepinsight/insightface/blob/master/model_zoo/README.md#1-face-recognition-models)
 
 ensure minting works on mobile also
