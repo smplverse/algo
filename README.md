@@ -62,13 +62,3 @@ optional arguments:
   --dataset DATASET  ibug_faces or famous_people
   --make-embeddings  include to create embeddings with the given model
 ```
-
-### TODO
-
-try the model here:
-[MagFace](https://github.com/IrvingMeng/MagFace)
-
-and buffalo from here:
-[Insightface](https://github.com/deepinsight/insightface/blob/master/model_zoo/README.md#1-face-recognition-models)
-
-ensure minting works on mobile also
